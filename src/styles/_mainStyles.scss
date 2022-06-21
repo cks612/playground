@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     height: 100%;
     padding: 20px;
+    text-decoration: none;
 
     .item {
       display: flex;
@@ -24,8 +25,8 @@
 
       img {
         margin: 20px 0;
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
       }
       p {
         font-size: 18px;
