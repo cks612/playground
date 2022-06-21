@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
+import Isometric from "./components/Isometric/Isometric";
 import Nav from "./components/Nav/Nav";
 import Main from "./pages/Main/index";
 
@@ -13,6 +14,7 @@ export default function Router() {
       <Nav />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/isometric" element={<Isometric />} />
       </Routes>
     </Suspense>
   );
