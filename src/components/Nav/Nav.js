@@ -13,7 +13,9 @@ const Nav = () => {
         <span onClick={goToHomeHandler}>Home</span>
         <a href="https://cks612.github.io/resume/">Resume</a>
       </div>
-      <div className="authorName">Welcome to Voyage's playground</div>
+      <div className="authorName" onClick={goToHomeHandler}>
+        Welcome to Voyage's playground
+      </div>
     </div>
   );
 };
