@@ -15,7 +15,13 @@ const index = () => {
             <p>22. 06. 21</p>
           </div>
 
-          <div className="item"></div>
+          <div className="item">
+            <p>Animation Input</p>
+            <Link to={"/inputAnimation"}>
+              <img src="/images/inputAnimation.png" alt="inputAnimation" />
+            </Link>
+            <p>22. 06. 23</p>
+          </div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
