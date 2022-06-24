@@ -21,8 +21,14 @@ const index = () => {
             </Link>
             <p>22. 06. 23</p>
           </div>
+          <div className="item">
+            <p>Modern Button</p>
+            <Link to={"/modernButton"}>
+              <img src="/images/modernButton.png" alt="modernButton" />
+            </Link>
+            <p>22. 06. 24</p>
+          </div>
 
-          <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
