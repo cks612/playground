@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import AnimatedMenu from "./components/AnimatedMenu/AnimatedMenu";
+import CircularBar from "./components/CircularBar/CircularBar";
 import InputAnimation from "./components/InputAnimation/InputAnimation";
 import Isometric from "./components/Isometric/Isometric";
 import ModernButton from "./components/ModernButton/ModernButton";
@@ -21,6 +22,7 @@ export default function Router() {
         <Route path="/inputAnimation" element={<InputAnimation />} />
         <Route path="/modernButton" element={<ModernButton />} />
         <Route path="/animatedMenu" element={<AnimatedMenu />} />
+        <Route path="/circularBar" element={<CircularBar />} />
       </Routes>
     </Suspense>
   );

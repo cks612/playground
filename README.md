@@ -2,15 +2,21 @@
 
 ### 2022.06.21 화요일
 
-## 초기세팅
-
 ## IsometricMenu
 
 https://www.youtube.com/watch?v=MmdKeypSxE8&t=260s
 
 ---
 
-### 2022 06 10
+### 2022 06 23 목요일
+
+## Animation Input
+
+https://www.youtube.com/watch?v=BMphVl9suxA
+
+---
+
+### 2022 06 24 금요일
 
 ## GlowingBtnHoverEffects
 
@@ -18,19 +24,11 @@ https://www.youtube.com/watch?v=LSNoRzojcQo
 
 ---
 
-### 2022 06 11
+### 2022 06 26 일요일
 
-## Progress Bar
+## Circular Bar
 
 https://www.youtube.com/watch?v=V_G1WzPjb4o
-
----
-
-### 2022 06 12
-
-## Login Page
-
-https://www.youtube.com/watch?v=OzFDIqOYaAA&t=128s
 
 ---
 
@@ -39,13 +37,5 @@ https://www.youtube.com/watch?v=OzFDIqOYaAA&t=128s
 ## Nav Menu
 
 https://www.youtube.com/watch?v=qzMy7yC9QvM&t=283s
-
----
-
-### 2022 06 19
-
-## Input field text animation
-
-https://www.youtube.com/watch?v=BMphVl9suxA
 
 ---

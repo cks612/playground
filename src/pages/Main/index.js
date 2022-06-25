@@ -34,8 +34,14 @@ const index = () => {
               <img src="/images/animatedMenu.png" alt="animatedMenu" />
             </Link>
             <p>22. 06. 25</p>
-          </div>{" "}
-          <div className="item"></div>
+          </div>
+          <div className="item">
+            <p>Circular Bar</p>
+            <Link to={"/circularBar"}>
+              <img src="/images/circularBar.png" alt="circularBar" />
+            </Link>
+            <p>22. 06. 26</p>
+          </div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>

@@ -1,0 +1,117 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.circularBarWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #222;
+
+  .container {
+    @include commonDisplayAttributes(flex, center, center);
+    position: relative;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    .card {
+      @include commonDisplayAttributes(flex, center, center);
+      @include size(220px, 250px);
+      position: relative;
+      background: #2a2a2a;
+
+      .percent {
+        @include size(150px, 150px);
+        position: relative;
+
+        svg {
+          @include size(150px, 150px);
+          position: relative;
+          transform: rotate(270deg);
+
+          circle {
+            @include size(100%, 100%);
+            fill: transparent;
+            stroke-width: 2;
+            stroke: #191919;
+            transform: translate(5px, 5px);
+
+            &:nth-child(2) {
+              stroke: var(--clr);
+              stroke-dasharray: 440;
+              stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+              animation: fadeIn 1s forwards;
+              animation-delay: 2.5s;
+              opacity: 0;
+            }
+          }
+        }
+        .dot {
+          position: absolute;
+          inset: 5px;
+          animation: animateDot 2s forwards;
+          z-index: 10;
+
+          &::before {
+            @include size(10px, 10px);
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            border-radius: 50%;
+            background: var(--clr);
+            transform: translateX(-50%);
+            box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+          }
+        }
+
+        .number {
+          @include commonDisplayAttributes(flex, center, center);
+          position: absolute;
+          inset: 0;
+          flex-direction: column;
+          animation: fadeIn 1s forwards;
+          animation-delay: 2.5s;
+          opacity: 0;
+
+          h2 {
+            @include commonDisplayAttributes(flex, center, center);
+            color: $background;
+            font-weight: 700;
+            font-size: 2.5em;
+
+            span {
+              font-weight: 300;
+              color: $background;
+              font-size: 0.5em;
+            }
+          }
+          p {
+            font-weight: 300;
+            font-size: 0.75em;
+            margin-top: 5px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.75);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animateDot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(calc(3.6deg * var(--num)));
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
