@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import AnimatedMenu from "./components/AnimatedMenu/AnimatedMenu";
+import BackgroundEffects from "./components/BackgroundEffects /BackgroundEffects";
 import CircularBar from "./components/CircularBar/CircularBar";
 import InputAnimation from "./components/InputAnimation/InputAnimation";
 import Isometric from "./components/Isometric/Isometric";
@@ -23,6 +24,7 @@ export default function Router() {
         <Route path="/modernButton" element={<ModernButton />} />
         <Route path="/animatedMenu" element={<AnimatedMenu />} />
         <Route path="/circularBar" element={<CircularBar />} />
+        <Route path="/backgroundEffects" element={<BackgroundEffects />} />
       </Routes>
     </Suspense>
   );

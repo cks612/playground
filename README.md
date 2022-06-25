@@ -32,6 +32,14 @@ https://www.youtube.com/watch?v=V_G1WzPjb4o
 
 ---
 
+### 2022 06 26 일요일
+
+## Background Effects
+
+https://www.youtube.com/watch?v=wuUSVEcK-kM
+
+---
+
 ### 2022 06 14
 
 ## Nav Menu
