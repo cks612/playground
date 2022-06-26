@@ -40,10 +40,22 @@ https://www.youtube.com/watch?v=wuUSVEcK-kM
 
 ---
 
-### 2022 06 14
+### 2022 06 26
 
-## Nav Menu
+## Menu Hover Effects
+
+https://www.youtube.com/watch?v=ViAwFGjWngQ
+
+### 2022 06 26
+
+## Magic Navigation Menu
 
 https://www.youtube.com/watch?v=qzMy7yC9QvM&t=283s
 
 ---
+
+### 2022 06 26
+
+## Arrow Magic Menu
+
+https://www.youtube.com/watch?v=5LTD_480gNU
