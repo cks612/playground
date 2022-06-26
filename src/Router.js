@@ -5,6 +5,7 @@ import BackgroundEffects from "./components/BackgroundEffects /BackgroundEffects
 import CircularBar from "./components/CircularBar/CircularBar";
 import InputAnimation from "./components/InputAnimation/InputAnimation";
 import Isometric from "./components/Isometric/Isometric";
+import MagicNavigationMenu from "./components/MagicNavigationMenu/MagicNavigationMenu";
 import MenuHoverEffect from "./components/MenuHoverEffect/MenuHoverEffect";
 import ModernButton from "./components/ModernButton/ModernButton";
 import Nav from "./components/Nav/Nav";
@@ -19,7 +20,7 @@ export default function Router() {
     <Suspense fallback={Loading()}>
       <Nav />
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/playground" element={<Main />} />
         <Route path="/isometric" element={<Isometric />} />
         <Route path="/inputAnimation" element={<InputAnimation />} />
         <Route path="/modernButton" element={<ModernButton />} />
@@ -27,6 +28,7 @@ export default function Router() {
         <Route path="/circularBar" element={<CircularBar />} />
         <Route path="/backgroundEffects" element={<BackgroundEffects />} />
         <Route path="/menuHoverEffects" element={<MenuHoverEffect />} />
+        <Route path="/magicNavigationMenu" element={<MagicNavigationMenu />} />
       </Routes>
     </Suspense>
   );

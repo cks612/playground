@@ -1,0 +1,120 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.magicNavigationWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #222327;
+
+  .navigation {
+    @include commonDisplayAttributes(flex, center, center);
+    @include size(400px, 60px);
+    position: relative;
+    background: $background;
+    border-radius: 10px;
+
+    ul {
+      display: flex;
+      width: 350px;
+
+      li {
+        @include size(70px, 60px);
+        position: relative;
+        list-style: none;
+        z-index: 2;
+
+        a {
+          @include commonDisplayAttributes(flex, center, center);
+          @include size(100%, 100%);
+          position: relative;
+
+          .icon {
+            @include size(55px, 55px);
+            position: relative;
+            display: block;
+            border-radius: 50%;
+            color: #222327;
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 65px;
+            transition: 0.5s;
+            transition-delay: 0s;
+
+            &::before {
+              @include size(100%, 100%);
+              content: "";
+              position: absolute;
+              top: 10px;
+              left: 0;
+              background: var(--clr);
+              border-radius: 50%;
+              filter: blur(5px);
+              opacity: 0;
+              transition: 0.5s;
+              transition-delay: 0s;
+            }
+          }
+        }
+        &.active a .icon {
+          background: var(--clr);
+          color: $background;
+          transform: translateY(-27px);
+          transition-delay: 0.25s;
+
+          &::before {
+            opacity: 0.5;
+            transition-delay: 0.25s;
+          }
+        }
+
+        &:nth-child(1).active ~ .indicator {
+          transform: translateX(calc(70px * 0));
+        }
+        &:nth-child(2).active ~ .indicator {
+          transform: translateX(calc(70px * 1));
+        }
+        &:nth-child(3).active ~ .indicator {
+          transform: translateX(calc(70px * 2));
+        }
+        &:nth-child(4).active ~ .indicator {
+          transform: translateX(calc(70px * 3));
+        }
+        &:nth-child(5).active ~ .indicator {
+          transform: translateX(calc(70px * 4));
+        }
+      }
+
+      .indicator {
+        @include size(70px, 70px);
+        position: absolute;
+        top: -35px;
+        background: $background;
+        border-radius: 50%;
+        z-index: 1;
+        transition: 0.5s;
+
+        &::before {
+          @include size(30px, 30px);
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: -28px;
+          border-radius: 50%;
+          background: transparent;
+          box-shadow: 15px 18px $background;
+        }
+
+        &::after {
+          @include size(30px, 30px);
+          content: "";
+          position: absolute;
+          top: 5px;
+          right: -28px;
+          border-radius: 50%;
+          background: transparent;
+          box-shadow: -15px 18px $background;
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ import "../../styles/_navStyles.scss";
 const Nav = () => {
   const navigate = useNavigate();
   const goToHomeHandler = () => {
-    navigate("/");
+    navigate("/playground");
   };
   return (
     <div className="header">
