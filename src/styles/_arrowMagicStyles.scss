@@ -1,0 +1,52 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.arrowWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #333;
+
+  ul {
+    @include commonDisplayAttributes(flex, center, center);
+    position: relative;
+    flex-direction: column;
+
+    li {
+      list-style: none;
+
+      a {
+        display: inline-block;
+        position: relative;
+        font-size: 2em;
+        color: $background;
+        text-decoration: none;
+        margin: 10px 0;
+      }
+    }
+
+    #marker {
+      @include commonDisplayAttributes(flex, space-between, center);
+      @include size(100px, 35px);
+      position: absolute;
+      top: 0;
+      margin-top: -5px;
+      transition: 0.5s;
+
+      &::before {
+        @include size(15px, 15px);
+        content: "";
+        border-top: 4px solid #30a3ff;
+        border-right: 4px solid #30a3ff;
+        transform: rotate(45deg) translate(-20px, 20px);
+      }
+
+      &::after {
+        @include size(15px, 15px);
+        content: "";
+        border-top: 4px solid #30a3ff;
+        border-right: 4px solid #30a3ff;
+        transform: rotate(225deg) translate(-20px, 20px);
+      }
+    }
+  }
+}

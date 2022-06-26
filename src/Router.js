@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import AnimatedMenu from "./components/AnimatedMenu/AnimatedMenu";
+import ArrowMagic from "./components/ArrowMagic/ArrowMagic";
 import BackgroundEffects from "./components/BackgroundEffects /BackgroundEffects";
 import CircularBar from "./components/CircularBar/CircularBar";
 import InputAnimation from "./components/InputAnimation/InputAnimation";
@@ -29,6 +30,7 @@ export default function Router() {
         <Route path="/backgroundEffects" element={<BackgroundEffects />} />
         <Route path="/menuHoverEffects" element={<MenuHoverEffect />} />
         <Route path="/magicNavigationMenu" element={<MagicNavigationMenu />} />
+        <Route path="/arrowMagic" element={<ArrowMagic />} />
       </Routes>
     </Suspense>
   );
