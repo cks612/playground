@@ -49,7 +49,13 @@ const index = () => {
             </Link>
             <p>22. 06. 26</p>
           </div>
-          <div className="item"></div>
+          <div className="item">
+            <p>Menu Hover Effects </p>
+            <Link to={"/menuHoverEffects"}>
+              <img src="/images/menuHoverEffects.png" alt="menuHoverEffects" />
+            </Link>
+            <p>22. 06. 26</p>
+          </div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
