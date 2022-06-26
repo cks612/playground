@@ -64,7 +64,7 @@ const index = () => {
             <p>22. 06. 26</p>
           </div>
           <div className="item">
-            <p>Magic Navigation Menu </p>
+            <p>Arrow Magic Menu </p>
             <Link to={"/arrowMagic"}>
               <img src="https://user-images.githubusercontent.com/66737450/175816393-d0c5eeb8-6e23-4f11-bfb9-0f3c27200af7.png" alt="arrowMagic" />
             </Link>
