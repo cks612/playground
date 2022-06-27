@@ -70,6 +70,17 @@ const index = () => {
             </Link>
             <p>22. 06. 26</p>
           </div>
+          <div className="item">
+            <p>Rainy Cloud</p>
+            <Link to={"/rainyCloud"}>
+              <img src="https://user-images.githubusercontent.com/66737450/175900755-f7411edc-c2a9-4e76-a0ab-4e7b2ef2192e.png" alt="rainyCloud" />
+            </Link>
+            <p>22. 06. 27</p>
+          </div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>

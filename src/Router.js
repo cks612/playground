@@ -10,6 +10,7 @@ import MagicNavigationMenu from "./components/MagicNavigationMenu/MagicNavigatio
 import MenuHoverEffect from "./components/MenuHoverEffect/MenuHoverEffect";
 import ModernButton from "./components/ModernButton/ModernButton";
 import Nav from "./components/Nav/Nav";
+import RainyCloud from "./components/RainyCloud/RainyCloud";
 import Main from "./pages/Main/index";
 
 const Loading = () => {
@@ -31,6 +32,7 @@ export default function Router() {
         <Route path="/menuHoverEffects" element={<MenuHoverEffect />} />
         <Route path="/magicNavigationMenu" element={<MagicNavigationMenu />} />
         <Route path="/arrowMagic" element={<ArrowMagic />} />
+        <Route path="/rainyCloud" element={<RainyCloud />} />
       </Routes>
     </Suspense>
   );
