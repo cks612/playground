@@ -42,7 +42,7 @@
         margin: 0 2px;
         border-radius: 50%;
         background: $background;
-        animation: animate 5s infinite;
+        animation: animate2 5s infinite;
         animation-duration: calc(15s / var(--i));
         transform-origin: bottom;
       }
@@ -50,12 +50,12 @@
   }
 }
 
-@keyframes animate {
+@keyframes animate2 {
   0% {
     transform: translateY(0) scale(1);
   }
   70% {
-    transform: translateY(298px) scale(1);
+    transform: translateY(298px) scale(0);
   }
   100% {
     transform: translateY(298px) scale(0);
