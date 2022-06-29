@@ -6,6 +6,7 @@ import BackgroundEffects from "./components/BackgroundEffects /BackgroundEffects
 import CircularBar from "./components/CircularBar/CircularBar";
 import InputAnimation from "./components/InputAnimation/InputAnimation";
 import Isometric from "./components/Isometric/Isometric";
+import LiquidLoader from "./components/LiquidLoader/LiquidLoader";
 import MagicNavigationMenu from "./components/MagicNavigationMenu/MagicNavigationMenu";
 import MenuHoverEffect from "./components/MenuHoverEffect/MenuHoverEffect";
 import ModernButton from "./components/ModernButton/ModernButton";
@@ -33,6 +34,7 @@ export default function Router() {
         <Route path="/magicNavigationMenu" element={<MagicNavigationMenu />} />
         <Route path="/arrowMagic" element={<ArrowMagic />} />
         <Route path="/rainyCloud" element={<RainyCloud />} />
+        <Route path="/liquidLoader" element={<LiquidLoader />} />
       </Routes>
     </Suspense>
   );
