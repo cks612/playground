@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import AnimatedMenu from "./components/AnimatedMenu/AnimatedMenu";
+import AnimatedPopup from "./components/AnimatedPopup/AnimatedPopup";
 import ArrowMagic from "./components/ArrowMagic/ArrowMagic";
 import BackgroundEffects from "./components/BackgroundEffects /BackgroundEffects";
 import CircularBar from "./components/CircularBar/CircularBar";
@@ -35,6 +36,7 @@ export default function Router() {
         <Route path="/arrowMagic" element={<ArrowMagic />} />
         <Route path="/rainyCloud" element={<RainyCloud />} />
         <Route path="/liquidLoader" element={<LiquidLoader />} />
+        <Route path="/animatedPopup" element={<AnimatedPopup />} />
       </Routes>
     </Suspense>
   );

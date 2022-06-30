@@ -78,13 +78,19 @@ const index = () => {
             <p>22. 06. 27</p>
           </div>
           <div className="item">
-            <p>Rainy Cloud</p>
+            <p>Liquid Loader</p>
             <Link to={"/liquidLoader"}>
               <img src="https://user-images.githubusercontent.com/66737450/176410828-c3e5035c-16b6-4b29-928d-b8fc98b7a5dd.png" alt="liquidLoader" />
             </Link>
             <p>22. 06. 29</p>
           </div>
-          <div className="item"></div>
+          <div className="item">
+            <p>Animated Popup</p>
+            <Link to={"/animatedPopup"}>
+              <img src="https://user-images.githubusercontent.com/66737450/176660281-e1f3eb91-c8a6-483a-a402-155d12138176.png" alt="animatedPopup" />
+            </Link>
+            <p>22. 06. 30</p>
+          </div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>

@@ -59,3 +59,27 @@ https://www.youtube.com/watch?v=qzMy7yC9QvM&t=283s
 ## Arrow Magic Menu
 
 https://www.youtube.com/watch?v=5LTD_480gNU
+
+---
+
+### 2022 06 27
+
+## Rainy Cloud
+
+https://www.youtube.com/watch?v=pKuvi9t4D4Y
+
+---
+
+### 2022 06 29
+
+## Liquid Loader
+
+https://www.youtube.com/watch?v=DGmgmILD60A
+
+---
+
+### 2022 06 30
+
+## Liquid Loader
+
+https://www.youtube.com/watch?v=DGmgmILD60A
