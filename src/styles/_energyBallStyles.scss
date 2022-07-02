@@ -1,0 +1,38 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.energyWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #000;
+
+  .energy {
+    @include size(300px, 300px);
+    position: relative;
+
+    span {
+      @include size(calc(300px + var(--i)), calc(300px + var(--i)));
+      position: absolute;
+      background: var(--clr);
+      border-radius: 50%;
+      transform-origin: calc(100px + var(--i));
+      animation: animateEnergy 5s infinite;
+      animation-duration: calc(var(--d));
+      mix-blend-mode: plus-lighter;
+      filter: blur(30px);
+
+      &:nth-child(even) {
+        animation-direction: reverse;
+      }
+    }
+  }
+}
+
+@keyframes animateEnergy {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

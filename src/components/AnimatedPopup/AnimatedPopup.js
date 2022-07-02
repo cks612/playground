@@ -4,7 +4,7 @@ import "../../styles/_animatedPopupStyles.scss";
 const AnimatedPopup = () => {
   const [toggle, setToggle] = useState();
 
-  const toggleActiveHandler = e => {
+  const toggleActiveHandler = () => {
     setToggle(!toggle);
   };
   return (

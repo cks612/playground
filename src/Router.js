@@ -5,6 +5,7 @@ import AnimatedPopup from "./components/AnimatedPopup/AnimatedPopup";
 import ArrowMagic from "./components/ArrowMagic/ArrowMagic";
 import BackgroundEffects from "./components/BackgroundEffects /BackgroundEffects";
 import CircularBar from "./components/CircularBar/CircularBar";
+import EnergyBall from "./components/EnergyBall/EnergyBall";
 import InputAnimation from "./components/InputAnimation/InputAnimation";
 import Isometric from "./components/Isometric/Isometric";
 import LiquidLoader from "./components/LiquidLoader/LiquidLoader";
@@ -37,6 +38,7 @@ export default function Router() {
         <Route path="/rainyCloud" element={<RainyCloud />} />
         <Route path="/liquidLoader" element={<LiquidLoader />} />
         <Route path="/animatedPopup" element={<AnimatedPopup />} />
+        <Route path="/energyBall" element={<EnergyBall />} />
       </Routes>
     </Suspense>
   );
