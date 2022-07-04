@@ -80,6 +80,22 @@ https://www.youtube.com/watch?v=DGmgmILD60A
 
 ### 2022 06 30
 
-## Liquid Loader
+## Animated Popup
 
-https://www.youtube.com/watch?v=DGmgmILD60A
+https://www.youtube.com/watch?v=3ygAZLEnG7I
+
+---
+
+### 2022 07 01
+
+## Animated Popup
+
+https://www.youtube.com/watch?v=k3eEk8iUCE4
+
+---
+
+### 2022 07 04
+
+## Responsive Card
+
+https://www.youtube.com/watch?v=dcUK7KZ3Dmo
