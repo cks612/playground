@@ -14,6 +14,7 @@ import MenuHoverEffect from "./components/MenuHoverEffect/MenuHoverEffect";
 import ModernButton from "./components/ModernButton/ModernButton";
 import Nav from "./components/Nav/Nav";
 import RainyCloud from "./components/RainyCloud/RainyCloud";
+import ResponsiveCard from "./components/ResponsiveCard/ResponsiveCard";
 import Main from "./pages/Main/index";
 
 const Loading = () => {
@@ -39,6 +40,7 @@ export default function Router() {
         <Route path="/liquidLoader" element={<LiquidLoader />} />
         <Route path="/animatedPopup" element={<AnimatedPopup />} />
         <Route path="/energyBall" element={<EnergyBall />} />
+        <Route path="/responsiveCard" element={<ResponsiveCard />} />
       </Routes>
     </Suspense>
   );
