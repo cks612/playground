@@ -4,6 +4,7 @@ import AnimatedMenu from "./components/AnimatedMenu/AnimatedMenu";
 import AnimatedPopup from "./components/AnimatedPopup/AnimatedPopup";
 import ArrowMagic from "./components/ArrowMagic/ArrowMagic";
 import BackgroundEffects from "./components/BackgroundEffects /BackgroundEffects";
+import BorderAnimation from "./components/BorderAnimation/BorderAnimation";
 import CircularBar from "./components/CircularBar/CircularBar";
 import EnergyBall from "./components/EnergyBall/EnergyBall";
 import InputAnimation from "./components/InputAnimation/InputAnimation";
@@ -41,6 +42,7 @@ export default function Router() {
         <Route path="/animatedPopup" element={<AnimatedPopup />} />
         <Route path="/energyBall" element={<EnergyBall />} />
         <Route path="/responsiveCard" element={<ResponsiveCard />} />
+        <Route path="/borderAnimation" element={<BorderAnimation />} />
       </Routes>
     </Suspense>
   );

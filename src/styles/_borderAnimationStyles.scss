@@ -1,0 +1,107 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.borderWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #162052;
+
+  .box {
+    @include size(400px, 400px);
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -10px 140px;
+      background: linear-gradient(315deg, #00ccff, #d400d4);
+      transition: 0.5s;
+      animation: borderAnimate 4s linear infinite;
+    }
+
+    &:hover::before {
+      inset: -20px 0px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      background: #162052;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .content {
+      @include commonDisplayAttributes(flex, center, center);
+      position: absolute;
+      inset: 30px;
+      border: 6px solid #070a1c;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-direction: column;
+      z-index: 3;
+
+      & img {
+        @include size(100%, 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 3;
+      }
+
+      h2 {
+        position: relative;
+        color: $background;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        span {
+          font-weight: 700;
+          font-size: 0.75em;
+        }
+      }
+
+      a {
+        position: relative;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        color: #070a1c;
+        background: $background;
+        font-weight: 500;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+
+        &:hover {
+          letter-spacing: 0.2em;
+        }
+      }
+    }
+
+    &:hover .content img {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes borderAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

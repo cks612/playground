@@ -1,7 +1,7 @@
 @import "../styles/_mixins.scss";
 
 .mainWrapper {
-  @include size(100%, 100vh);
+  @include size(100%, 100%);
   background: gainsboro;
 
   .items {

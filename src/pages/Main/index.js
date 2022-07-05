@@ -105,6 +105,19 @@ const index = () => {
             </Link>
             <p>22. 07. 04</p>
           </div>
+          <div className="item">
+            <p>Border Animation</p>
+            <Link to={"/borderAnimation"}>
+              <img src="https://user-images.githubusercontent.com/66737450/177280832-b613f99f-1ec6-4f2d-8415-2531d1c0ccb2.png" alt="borderAnimation" />
+            </Link>
+            <p>22. 07. 05</p>
+          </div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
