@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import AnimatedMenu from "./components/AnimatedMenu/AnimatedMenu";
 import AnimatedPopup from "./components/AnimatedPopup/AnimatedPopup";
+import AnimatedVideo from "./components/AnimatedVideo/AnimatedVideo";
 import ArrowMagic from "./components/ArrowMagic/ArrowMagic";
 import BackgroundEffects from "./components/BackgroundEffects /BackgroundEffects";
 import BorderAnimation from "./components/BorderAnimation/BorderAnimation";
@@ -43,6 +44,7 @@ export default function Router() {
         <Route path="/energyBall" element={<EnergyBall />} />
         <Route path="/responsiveCard" element={<ResponsiveCard />} />
         <Route path="/borderAnimation" element={<BorderAnimation />} />
+        <Route path="/animatedVideo" element={<AnimatedVideo />} />
       </Routes>
     </Suspense>
   );
