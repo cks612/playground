@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
+import AnalogClock from "./components/AnalogClock/AnalogClock";
 import AnimatedMenu from "./components/AnimatedMenu/AnimatedMenu";
 import AnimatedPopup from "./components/AnimatedPopup/AnimatedPopup";
 import AnimatedVideo from "./components/AnimatedVideo/AnimatedVideo";
@@ -45,6 +46,7 @@ export default function Router() {
         <Route path="/responsiveCard" element={<ResponsiveCard />} />
         <Route path="/borderAnimation" element={<BorderAnimation />} />
         <Route path="/animatedVideo" element={<AnimatedVideo />} />
+        <Route path="/analogClock" element={<AnalogClock />} />
       </Routes>
     </Suspense>
   );

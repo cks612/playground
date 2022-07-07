@@ -1,0 +1,150 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+.analogClock {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #2f363e;
+  font-family: "Poppins", sans-serif;
+
+  .container {
+    @include commonDisplayAttributes(flex, center, center);
+    position: relative;
+    flex-direction: column;
+    background: #2f363e;
+    border-radius: 20px;
+    border-top-left-radius: 225px;
+    border-top-right-radius: 225px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75), 10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+      inset 5px 5px rgba(255, 255, 255, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+
+    .clock {
+      @include commonDisplayAttributes(flex, center, center);
+      @include size(450px, 450px);
+      position: relative;
+      margin-bottom: 30px;
+      background: #2f363e;
+      border-radius: 50%;
+      box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+
+      &::before {
+        @include size(8px, 8px);
+        content: "";
+        position: absolute;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        background: #2f363e;
+        z-index: 10000;
+      }
+
+      span {
+        position: absolute;
+        inset: 20px;
+        color: #fff;
+        text-align: center;
+        transform: rotate(calc(30deg * var(--i))); // 360 / 12 = 30deg
+
+        b {
+          display: inline-block;
+          font-weight: 600;
+          font-size: 2em;
+          opacity: 0.25;
+          transform: rotate(calc(-30deg * var(--i)));
+        }
+      }
+
+      .circle {
+        @include commonDisplayAttributes(flex, center, flex-start);
+        @include size(300px, 300px);
+        position: absolute;
+        border: 2px solid rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        z-index: 10;
+
+        &.circle2 {
+          @include size(240px, 240px);
+          z-index: 9;
+        }
+
+        &.circle3 {
+          @include size(180px, 180px);
+          z-index: 8;
+        }
+
+        i {
+          @include size(6px, 50%);
+          position: absolute;
+          background: var(--clr);
+          opacity: 0.75;
+          transform-origin: bottom;
+          transform: scaleY(0.5);
+        }
+
+        &:nth-child(1) i {
+          width: 2px;
+        }
+
+        &:nth-child(2) i {
+          width: 6px;
+        }
+
+        &::before {
+          @include size(15px, 15px);
+          content: "";
+          position: absolute;
+          top: -8.5px;
+          border-radius: 50%;
+          background: var(--clr);
+          box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+        }
+      }
+    }
+  }
+
+  #time {
+    display: flex;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    font-size: 2em;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+
+    div {
+      position: relative;
+      width: 60px;
+      color: var(--clr);
+      text-align: center;
+      font-weight: 500;
+
+      &:nth-child(1)::after,
+      &:nth-child(2)::after {
+        content: ":";
+        position: absolute;
+        right: -4px;
+      }
+
+      &:last-child {
+        @include commonDisplayAttributes(flex, center, center);
+        color: #fff;
+        font-size: 0.5em;
+      }
+
+      &:nth-child(2)::after {
+        animation: clockAnimate 1s steps(1) infinite;
+      }
+    }
+  }
+}
+
+@keyframes clockAnimate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
