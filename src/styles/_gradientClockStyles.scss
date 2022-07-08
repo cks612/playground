@@ -1,0 +1,76 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.gradientClock {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #222;
+
+  .circle {
+    @include commonDisplayAttributes(flex, center, center);
+    @include size(500px, 500px);
+    position: relative;
+    border-radius: 50%;
+    background: rgba(225, 225, 225, 0.05);
+    box-shadow: 0 0 0 2px #fff5, 0 0 0 20px #333, 0 0 0 22px #fff, 0 0 50px #fff, 0 0 450px #fff;
+
+    &::before {
+      @include size(2px, 170px);
+      content: "";
+      position: absolute;
+      border-radius: 2px;
+      background: linear-gradient(0deg, transparent, #fff);
+      transform-origin: bottom;
+      animation: clockAnimate 20s steps(60) infinite;
+    }
+
+    &::after {
+      @include size(4px, 130px);
+      content: "";
+      position: absolute;
+      border-radius: 2px;
+      background: linear-gradient(0deg, transparent, #fff);
+      transform-origin: bottom;
+      animation: clockAnimate 120s steps(60) infinite;
+    }
+
+    ul {
+      li {
+        position: absolute;
+        top: 10px;
+        font-size: 2.5em;
+        font-weight: bold;
+        list-style: none;
+        text-transform: uppercase;
+        transform: rotate(calc(21deg * var(--i)));
+        transform-origin: 0 240px;
+
+        span {
+          display: inline-block;
+          color: #fff;
+          transform: rotate(calc(-21deg * var(--i)));
+          box-shadow: 0 0 15px #fff, 0 0 35px #fff, 0 0 75px #fff, 0 0 150px #fff;
+        }
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#08ff12, #0791ff);
+    z-index: 1000;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+}
+
+@keyframes clockAnimate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

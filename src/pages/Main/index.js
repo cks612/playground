@@ -126,6 +126,13 @@ const index = () => {
             </Link>
             <p>22. 07. 07</p>
           </div>
+          <div className="item">
+            <p>Gradient Clock</p>
+            <Link to={"/gradientClock"}>
+              <img src="https://user-images.githubusercontent.com/66737450/177960362-cf96d957-81c7-4820-8592-f5a236885142.png" alt="gradientClock" />
+            </Link>
+            <p>22. 07. 08</p>
+          </div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>

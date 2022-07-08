@@ -99,3 +99,35 @@ https://www.youtube.com/watch?v=k3eEk8iUCE4
 ## Responsive Card
 
 https://www.youtube.com/watch?v=dcUK7KZ3Dmo
+
+---
+
+### 2022 07 05
+
+## Border Animation
+
+https://www.youtube.com/watch?v=1C8lGN-1Sq0
+
+---
+
+### 2022 07 06
+
+## Animated Video
+
+https://www.youtube.com/watch?v=cw21m2S5PXQ
+
+---
+
+### 2022 07 07
+
+## Analog Clock
+
+https://www.youtube.com/watch?v=yXFiTDfhSXo
+
+---
+
+### 2022 07 08
+
+## Gradient Clock
+
+https://www.youtube.com/watch?v=b08cMaYjOtg

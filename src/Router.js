@@ -9,6 +9,7 @@ import BackgroundEffects from "./components/BackgroundEffects /BackgroundEffects
 import BorderAnimation from "./components/BorderAnimation/BorderAnimation";
 import CircularBar from "./components/CircularBar/CircularBar";
 import EnergyBall from "./components/EnergyBall/EnergyBall";
+import GradientClock from "./components/GradientClock/GradientClock";
 import InputAnimation from "./components/InputAnimation/InputAnimation";
 import Isometric from "./components/Isometric/Isometric";
 import LiquidLoader from "./components/LiquidLoader/LiquidLoader";
@@ -47,6 +48,7 @@ export default function Router() {
         <Route path="/borderAnimation" element={<BorderAnimation />} />
         <Route path="/animatedVideo" element={<AnimatedVideo />} />
         <Route path="/analogClock" element={<AnalogClock />} />
+        <Route path="/gradientClock" element={<GradientClock />} />
       </Routes>
     </Suspense>
   );
