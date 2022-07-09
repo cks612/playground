@@ -17,6 +17,7 @@ import MagicNavigationMenu from "./components/MagicNavigationMenu/MagicNavigatio
 import MenuHoverEffect from "./components/MenuHoverEffect/MenuHoverEffect";
 import ModernButton from "./components/ModernButton/ModernButton";
 import Nav from "./components/Nav/Nav";
+import Particles from "./components/Particles/Particles";
 import RainyCloud from "./components/RainyCloud/RainyCloud";
 import ResponsiveCard from "./components/ResponsiveCard/ResponsiveCard";
 import Main from "./pages/Main/index";
@@ -49,6 +50,7 @@ export default function Router() {
         <Route path="/animatedVideo" element={<AnimatedVideo />} />
         <Route path="/analogClock" element={<AnalogClock />} />
         <Route path="/gradientClock" element={<GradientClock />} />
+        <Route path="/particles" element={<Particles />} />
       </Routes>
     </Suspense>
   );

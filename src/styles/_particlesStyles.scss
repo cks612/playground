@@ -1,0 +1,33 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.particles {
+  min-height: 100vh;
+  background: #111;
+
+  span {
+    @include size(10px, 10px);
+    position: absolute;
+    border-radius: 50%;
+    background: #f00;
+    pointer-events: none;
+
+    &::before {
+      @include size(100%, 100%);
+      content: "";
+      position: absolute;
+      background: #fff;
+      border-radius: 50%;
+      animation: moveParticles 2s linear infinite;
+    }
+  }
+}
+
+@keyframes moveParticles {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(300px);
+  }
+}
