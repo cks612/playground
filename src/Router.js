@@ -21,6 +21,7 @@ import Nav from "./components/Nav/Nav";
 import Particles from "./components/Particles/Particles";
 import RainyCloud from "./components/RainyCloud/RainyCloud";
 import ResponsiveCard from "./components/ResponsiveCard/ResponsiveCard";
+import Scanner from "./components/Scanner/Scanner";
 import Main from "./pages/Main/index";
 
 const Loading = () => {
@@ -53,6 +54,7 @@ export default function Router() {
         <Route path="/gradientClock" element={<GradientClock />} />
         <Route path="/particles" element={<Particles />} />
         <Route path="/awesomeBorder" element={<AwesomeBorder />} />
+        <Route path="/scanner" element={<Scanner />} />
       </Routes>
     </Suspense>
   );

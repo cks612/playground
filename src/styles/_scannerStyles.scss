@@ -1,0 +1,85 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.scanner {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #111;
+
+  .scan {
+    @include commonDisplayAttributes(flex, null, center);
+    position: relative;
+    flex-direction: column;
+
+    .fingerPrint {
+      @include size(300px, 380px);
+      position: relative;
+      background: url(https://user-images.githubusercontent.com/66737450/178144790-4045ce33-04ae-442d-995f-60914c21b89a.png);
+      background-size: 300px;
+
+      &::before {
+        @include size(100%, 100%);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0ex;
+        background: url(https://user-images.githubusercontent.com/66737450/178144792-9acedca6-72ba-4fe6-b82d-066e6b6731a1.png);
+        background-size: 300px;
+        animation: fingerPrintAnimate 4s ease-in-out infinite;
+      }
+
+      &::after {
+        @include size(100%, 8px);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #3fefef;
+        border-radius: 8px;
+        filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+        animation: lineAnimate 4s ease-in-out infinite;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      margin-top: 20px;
+      color: #3fefef;
+      font-size: 2em;
+      font-weight: 900;
+      letter-spacing: 2px;
+      filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+      animation: textAnimate 0.5s steps(1) infinite;
+    }
+  }
+}
+
+@keyframes fingerPrintAnimate {
+  0%,
+  100% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+}
+
+@keyframes lineAnimate {
+  0%,
+  100% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+}
+
+@keyframes textAnimate {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
