@@ -134,7 +134,7 @@
       }
 
       &:nth-child(2)::after {
-        animation: clockAnimate 1s steps(1) infinite;
+        animation: clockAnimate 1s steps(0) infinite;
       }
     }
   }
