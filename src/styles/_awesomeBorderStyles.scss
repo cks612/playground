@@ -1,0 +1,59 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.awesomeBorder {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #0c1022;
+
+  .box {
+    @include commonDisplayAttributes(flex, center, center);
+    @include size(300px, 400px);
+    position: relative;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    overflow: hidden;
+
+    &::after {
+      @include size(500px, 500px);
+      content: "";
+      position: absolute;
+      background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
+      animation: awesomeAnimate 4s linear infinite;
+      animation-delay: -2s;
+    }
+
+    &::before {
+      @include size(500px, 500px);
+      content: "";
+      position: absolute;
+      background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+      animation: awesomeAnimate 4s linear infinite;
+    }
+
+    span {
+      position: absolute;
+      inset: 5px;
+      border-radius: 16px;
+      background: #0c1022;
+      z-index: 1;
+    }
+
+    h2 {
+      position: relative;
+      color: $background;
+      font-size: 10em;
+      font-weight: 900;
+      z-index: 2;
+    }
+  }
+}
+
+@keyframes awesomeAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

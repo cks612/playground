@@ -5,6 +5,7 @@ import AnimatedMenu from "./components/AnimatedMenu/AnimatedMenu";
 import AnimatedPopup from "./components/AnimatedPopup/AnimatedPopup";
 import AnimatedVideo from "./components/AnimatedVideo/AnimatedVideo";
 import ArrowMagic from "./components/ArrowMagic/ArrowMagic";
+import AwesomeBorder from "./components/AwesomeBorder/AwesomeBorder";
 import BackgroundEffects from "./components/BackgroundEffects /BackgroundEffects";
 import BorderAnimation from "./components/BorderAnimation/BorderAnimation";
 import CircularBar from "./components/CircularBar/CircularBar";
@@ -51,6 +52,7 @@ export default function Router() {
         <Route path="/analogClock" element={<AnalogClock />} />
         <Route path="/gradientClock" element={<GradientClock />} />
         <Route path="/particles" element={<Particles />} />
+        <Route path="/awesomeBorder" element={<AwesomeBorder />} />
       </Routes>
     </Suspense>
   );
