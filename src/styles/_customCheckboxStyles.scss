@@ -1,0 +1,69 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.customCheckbox {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: radial-gradient(#555, #292929);
+
+  label {
+    @include commonDisplayAttributes(flex, center, center);
+    @include size(300px, 150px);
+    position: relative;
+    background: #3e3e3e;
+    box-shadow: 0 0 0 4px #303030;
+    border-radius: 75px;
+    cursor: pointer;
+
+    input {
+      appearance: none;
+    }
+
+    span {
+      @include size(175px, 150px);
+      position: absolute;
+      left: 0;
+      background: url(https://user-images.githubusercontent.com/66737450/178241929-e36e9a08-1afd-41d5-9463-cdba32ed879c.png);
+      background-size: auto 150px;
+      background-repeat: no-repeat;
+      transition: 1.5s;
+      transform: rotate(-180deg);
+      transform-origin: 75px;
+    }
+
+    input:checked ~ span {
+      left: 150px;
+      background: url(https://user-images.githubusercontent.com/66737450/178242528-47c67487-ada1-4508-a3c7-8c60c20f085f.png);
+      background-size: auto 150px;
+      background-repeat: no-repeat;
+      transform: rotate(360deg);
+    }
+
+    text {
+      position: absolute;
+      left: -120px;
+      color: $background;
+      font-size: 3em;
+      font-family: consolas;
+      filter: drop-shadow(0 0 15px #fff) drop-shadow(0 0 35px #fff);
+      transition: 1.5s;
+
+      &:last-child {
+        position: absolute;
+        left: initial;
+        right: -100px;
+        color: #8f8f8f;
+        filter: none;
+      }
+    }
+    input:checked ~ text {
+      color: #8f8f8f;
+      filter: none;
+
+      &:last-child {
+        color: $background;
+        filter: drop-shadow(0 0 15px #fff) drop-shadow(0 0 35px #fff);
+      }
+    }
+  }
+}
