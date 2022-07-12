@@ -161,6 +161,13 @@ const index = () => {
             </Link>
             <p>22. 07. 11</p>
           </div>
+          <div className="item">
+            <p>Menu Hover Animation</p>
+            <Link to={"/menuHoverAnimation"}>
+              <img src="https://user-images.githubusercontent.com/66737450/178468566-aded9eed-a8ac-4bc4-8eed-8777191d61f8.png" alt="menuHoverAnimation" />
+            </Link>
+            <p>22. 07. 12</p>
+          </div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>

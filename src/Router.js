@@ -16,6 +16,7 @@ import InputAnimation from "./components/InputAnimation/InputAnimation";
 import Isometric from "./components/Isometric/Isometric";
 import LiquidLoader from "./components/LiquidLoader/LiquidLoader";
 import MagicNavigationMenu from "./components/MagicNavigationMenu/MagicNavigationMenu";
+import MenuHoverAnimation from "./components/MenuHoverAnimation";
 import MenuHoverEffect from "./components/MenuHoverEffect/MenuHoverEffect";
 import ModernButton from "./components/ModernButton/ModernButton";
 import Nav from "./components/Nav/Nav";
@@ -57,6 +58,7 @@ export default function Router() {
         <Route path="/awesomeBorder" element={<AwesomeBorder />} />
         <Route path="/scanner" element={<Scanner />} />
         <Route path="/customCheckbox" element={<CustomCheckbox />} />
+        <Route path="/menuHoverAnimation" element={<MenuHoverAnimation />} />
       </Routes>
     </Suspense>
   );
