@@ -24,6 +24,7 @@ import Particles from "./components/Particles/Particles";
 import RainyCloud from "./components/RainyCloud/RainyCloud";
 import ResponsiveCard from "./components/ResponsiveCard/ResponsiveCard";
 import Scanner from "./components/Scanner/Scanner";
+import TextHover from "./components/TextHover/TextHover";
 import Main from "./pages/Main/index";
 
 const Loading = () => {
@@ -59,6 +60,7 @@ export default function Router() {
         <Route path="/scanner" element={<Scanner />} />
         <Route path="/customCheckbox" element={<CustomCheckbox />} />
         <Route path="/menuHoverAnimation" element={<MenuHoverAnimation />} />
+        <Route path="/textHover" element={<TextHover />} />
       </Routes>
     </Suspense>
   );
