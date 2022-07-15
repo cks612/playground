@@ -23,8 +23,10 @@ import Nav from "./components/Nav/Nav";
 import Particles from "./components/Particles/Particles";
 import RainyCloud from "./components/RainyCloud/RainyCloud";
 import ResponsiveCard from "./components/ResponsiveCard/ResponsiveCard";
+import RingAnimation from "./components/RingAnimation/";
 import Scanner from "./components/Scanner/Scanner";
 import TextHover from "./components/TextHover/TextHover";
+
 import Main from "./pages/Main/index";
 
 const Loading = () => {
@@ -61,6 +63,7 @@ export default function Router() {
         <Route path="/customCheckbox" element={<CustomCheckbox />} />
         <Route path="/menuHoverAnimation" element={<MenuHoverAnimation />} />
         <Route path="/textHover" element={<TextHover />} />
+        <Route path="/ringAnimation" element={<RingAnimation />} />
       </Routes>
     </Suspense>
   );
