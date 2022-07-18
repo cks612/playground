@@ -1,0 +1,61 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.imageHoverWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #222;
+
+  .box {
+    @include size(400px, 300px);
+    position: relative;
+    // background: #fff;
+
+    span {
+      position: absolute;
+      inset: 0;
+      transition: 0.5s;
+      background: url("https://user-images.githubusercontent.com/66737450/174422458-b4392872-c9d4-4dd2-a9c3-1472a0a47a43.JPG");
+      background-size: cover;
+
+      &:nth-child(1) {
+        clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+        // background: #a00;
+        transition-delay: 0s;
+      }
+
+      &:nth-child(2) {
+        clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+        // background: #0e0;
+        transition-delay: 0.25s;
+      }
+
+      &:nth-child(3) {
+        clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+        // background: #00a;
+        transition-delay: 0.5s;
+      }
+
+      &:nth-child(2) {
+        clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+        // background: #aa0;
+        transition-delay: 0.75s;
+      }
+    }
+    &:hover span:nth-child(1) {
+      transform: translate(-40px, -60px) rotate(-15deg);
+    }
+
+    &:hover span:nth-child(2) {
+      transform: translate(40px, 100px) rotate(25deg);
+    }
+
+    &:hover span:nth-child(3) {
+      transform: translate(-40px, 80px) rotate(15deg);
+    }
+
+    &:hover span:nth-child(4) {
+      transform: translate(40px, 80px) rotate(-15deg);
+    }
+  }
+}
