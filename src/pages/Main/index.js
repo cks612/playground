@@ -182,11 +182,13 @@ const index = () => {
             </Link>
             <p>22. 07. 15</p>
           </div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
+          <div className="item">
+            <p>Image Hover Effect</p>
+            <Link to={"/imageHoverEffect"}>
+              <img src="https://user-images.githubusercontent.com/66737450/179545984-cbac6139-a45d-4006-b2ae-995ca473b018.png" alt="imageHoverEffect" />
+            </Link>
+            <p>22. 07. 19</p>
+          </div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
