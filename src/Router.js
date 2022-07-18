@@ -26,6 +26,7 @@ import ResponsiveCard from "./components/ResponsiveCard/ResponsiveCard";
 import RingAnimation from "./components/RingAnimation/";
 import Scanner from "./components/Scanner/Scanner";
 import TextHover from "./components/TextHover/TextHover";
+import ImageHoverEffect from "./components/ImageHoverEffect/";
 
 import Main from "./pages/Main/index";
 
@@ -64,6 +65,7 @@ export default function Router() {
         <Route path="/menuHoverAnimation" element={<MenuHoverAnimation />} />
         <Route path="/textHover" element={<TextHover />} />
         <Route path="/ringAnimation" element={<RingAnimation />} />
+        <Route path="/imageHoverEffect" element={<ImageHoverEffect />} />
       </Routes>
     </Suspense>
   );

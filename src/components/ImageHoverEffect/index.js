@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/_imageHoverEffectStyles.scss";
 
-const index = () => {
+const imageHoverEffect = () => {
   return (
     <div className="imageHoverWrapper">
       <div className="box">
@@ -14,4 +14,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default imageHoverEffect;
