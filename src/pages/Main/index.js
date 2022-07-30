@@ -189,6 +189,13 @@ const index = () => {
             </Link>
             <p>22. 07. 19</p>
           </div>
+          <div className="item">
+            <p>Range Slider</p>
+            <Link to={"/rangeSlider"}>
+              <img src="https://user-images.githubusercontent.com/66737450/181867592-a6a46961-8950-49e5-82b2-b4841a988e18.png" alt="rangeSlider" />
+            </Link>
+            <p>22. 07. 30</p>
+          </div>
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
