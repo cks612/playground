@@ -205,6 +205,11 @@ const index = () => {
           <div className="item"></div>
           <div className="item"></div>
           <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
         </div>
       </div>
     </div>
