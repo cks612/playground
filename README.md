@@ -161,3 +161,9 @@ https://www.youtube.com/watch?v=ElB5JvZNyVY
 ## Range Slider
 
 https://www.youtube.com/watch?v=T-1dSuMo0TA
+
+### 2022 08 08
+
+## Animation Action Menu
+
+https://www.youtube.com/watch?v=BsE6k7siWKE

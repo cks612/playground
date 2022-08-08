@@ -1,0 +1,111 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.animatedActionMenuWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ff216d, #2196f3);
+
+  .navigation {
+    @include commonDisplayAttributes(flex, center, center);
+    position: relative;
+
+    .menuToggle {
+      @include commonDisplayAttributes(flex, center, center);
+      @include size(70px, 70px);
+      position: relative;
+      background: #fff;
+      border-radius: 70px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+
+      &::before {
+        content: "+";
+        position: absolute;
+        font-size: 3em;
+        font-weight: 200;
+        color: #ff216d;
+        transition: 1.5s;
+      }
+    }
+    .menuToggle.active::before {
+      transform: rotate(225deg);
+    }
+
+    .menu {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: #fff;
+      border-radius: 70px;
+      transition: transform 0.5s, width 0.5s, height 0.5s;
+      transition-delay: 1s, 0.5s, 0.5s;
+      transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      z-index: -1;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: red;
+        left: calc(50% - 8px);
+        bottom: 4px;
+        transform: rotate(45deg);
+        border-radius: 2px;
+        transition: 0.5s;
+      }
+
+      ul {
+        @include commonDisplayAttributes(flex, center, center);
+        position: relative;
+        height: 80px;
+        gap: 40px;
+
+        li {
+          list-style: none;
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.25s;
+          cursor: pointer;
+          transition-delay: calc(0s + var(--i));
+          transform: translateY(-30px);
+
+          a {
+            display: block;
+            font-size: 2em;
+            text-decoration: none;
+            color: #555;
+          }
+
+          &:hover a {
+            color: #ff216d;
+          }
+        }
+      }
+    }
+
+    .menuToggle.active ~ .menu {
+      width: 240px;
+      height: 70px;
+      transform: translateY(-100px);
+      transition-delay: 0s, 0.5s, 0.5s;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+
+      &::before {
+        transition-delay: 0.5s;
+        bottom: -6px;
+      }
+
+      ul {
+        li {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0px);
+          transition-delay: calc(0.75s + var(--i));
+        }
+      }
+    }
+  }
+}
