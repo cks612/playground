@@ -1,0 +1,88 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.dropDownWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #f9f9f9;
+
+  .dropDown {
+    position: relative;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+
+    &::before {
+      @include size(12px, 2px);
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 28px;
+      background: #555;
+      z-index: 10;
+      transform: rotate(40deg);
+      transition: 0.5s;
+    }
+
+    &::after {
+      @include size(12px, 2px);
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      background: #555;
+      z-index: 10;
+      transform: rotate(-40deg);
+      transition: 0.5s;
+    }
+
+    &.active::before {
+      right: 20px;
+    }
+    &.active::after {
+      right: 28px;
+    }
+    &.active .option {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    input {
+      @include size(100%, 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-size: 16px;
+      background: #fff;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      outline: none;
+      cursor: pointer;
+    }
+
+    .option {
+      position: absolute;
+      top: 70px;
+      width: 100%;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.25s;
+
+      div {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &:hover {
+          background: #62baea;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

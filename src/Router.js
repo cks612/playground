@@ -31,6 +31,7 @@ import ImageHoverEffect from "./components/ImageHoverEffect/";
 import Main from "./pages/Main/index";
 import RangeSlider from "./components/RangeSlider";
 import AnimatedActionMenu from "./components/AnimatedActionMenu";
+import DropDownMenu from "./components/DropDownMenu";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -70,6 +71,7 @@ export default function Router() {
         <Route path="/imageHoverEffect" element={<ImageHoverEffect />} />
         <Route path="/rangeSlider" element={<RangeSlider />} />
         <Route path="/animatedActionMenu" element={<AnimatedActionMenu />} />
+        <Route path="/dropDownMenu" element={<DropDownMenu />} />
       </Routes>
     </Suspense>
   );
