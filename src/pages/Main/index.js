@@ -210,9 +210,13 @@ const index = () => {
             </Link>
             <p>22. 09. 13</p>
           </div>
-          <div className="item" />
-          <div className="item" />
-          <div className="item" />
+          <div className="item">
+            <p>Input Field Animation</p>
+            <Link to="/inputField">
+              <img src="https://user-images.githubusercontent.com/66737450/190171276-5a6e6b68-3ba1-45ae-9f22-d460b60eb4db.png" alt="inputField" />
+            </Link>
+            <p>22. 09. 14</p>
+          </div>
           <div className="item" />
           <div className="item" />
           <div className="item" />
