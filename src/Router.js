@@ -33,6 +33,7 @@ import RangeSlider from "./components/RangeSlider";
 import AnimatedActionMenu from "./components/AnimatedActionMenu";
 import DropDownMenu from "./components/DropDownMenu";
 import InputField from "./components/InputField";
+import ValidationCheck from "./components/ValidationCheck";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -74,6 +75,7 @@ export default function Router() {
         <Route path="/animatedActionMenu" element={<AnimatedActionMenu />} />
         <Route path="/dropDownMenu" element={<DropDownMenu />} />
         <Route path="/inputField" element={<InputField />} />
+        <Route path="/validationCheck" element={<ValidationCheck />} />
       </Routes>
     </Suspense>
   );

@@ -179,3 +179,9 @@ https://www.youtube.com/watch?v=nTfCqfVrO8E
 ## Input Field
 
 https://www.youtube.com/watch?v=KnYwz3ksW7E
+
+### 2022 09 15
+
+## Validation Check
+
+https://www.youtube.com/watch?v=Hi8DVOaZ0Ug
