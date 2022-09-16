@@ -34,6 +34,7 @@ import AnimatedActionMenu from "./components/AnimatedActionMenu";
 import DropDownMenu from "./components/DropDownMenu";
 import InputField from "./components/InputField";
 import ValidationCheck from "./components/ValidationCheck";
+import GlowingRing from "./components/GlowingRing";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -76,6 +77,7 @@ export default function Router() {
         <Route path="/dropDownMenu" element={<DropDownMenu />} />
         <Route path="/inputField" element={<InputField />} />
         <Route path="/validationCheck" element={<ValidationCheck />} />
+        <Route path="/glowingRing" element={<GlowingRing />} />
       </Routes>
     </Suspense>
   );

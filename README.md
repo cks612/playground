@@ -185,3 +185,9 @@ https://www.youtube.com/watch?v=KnYwz3ksW7E
 ## Validation Check
 
 https://www.youtube.com/watch?v=Hi8DVOaZ0Ug
+
+### 2022 09 16
+
+## Glowing Ring
+
+https://www.youtube.com/watch?v=n6ojK2HmROE

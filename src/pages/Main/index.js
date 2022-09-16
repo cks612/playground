@@ -224,6 +224,16 @@ const index = () => {
             </Link>
             <p>22. 09. 15</p>
           </div>
+          <div className="item">
+            <p>Glowing Ring Animate</p>
+            <Link to="/glowingRing">
+              <img src="https://user-images.githubusercontent.com/66737450/190570805-2943e39d-604a-4b85-a7cf-8f744caaca5c.png" alt="glowingRing" />
+            </Link>
+            <p>22. 09. 16</p>
+          </div>
+          <div className="item" />
+          <div className="item" />
+          <div className="item" />
           <div className="item" />
           <div className="item" />
           <div className="item" />
