@@ -231,7 +231,13 @@ const index = () => {
             </Link>
             <p>22. 09. 16</p>
           </div>
-          <div className="item" />
+          <div className="item">
+            <p>QR Code Scanner</p>
+            <Link to="/qrCodeScanner">
+              <img src="https://user-images.githubusercontent.com/66737450/191001429-d45a7e54-63a7-4e5b-ae7c-cb46fc85a997.png" alt="qrCodeScanner" />
+            </Link>
+            <p>22. 09. 19</p>
+          </div>
           <div className="item" />
           <div className="item" />
           <div className="item" />

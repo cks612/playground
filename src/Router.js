@@ -35,6 +35,7 @@ import DropDownMenu from "./components/DropDownMenu";
 import InputField from "./components/InputField";
 import ValidationCheck from "./components/ValidationCheck";
 import GlowingRing from "./components/GlowingRing";
+import QrCodeScanner from "./components/QrCodeScanner";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -78,6 +79,7 @@ export default function Router() {
         <Route path="/inputField" element={<InputField />} />
         <Route path="/validationCheck" element={<ValidationCheck />} />
         <Route path="/glowingRing" element={<GlowingRing />} />
+        <Route path="/qrCodeScanner" element={<QrCodeScanner />} />
       </Routes>
     </Suspense>
   );
