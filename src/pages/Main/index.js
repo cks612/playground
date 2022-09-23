@@ -238,7 +238,14 @@ const index = () => {
             </Link>
             <p>22. 09. 19</p>
           </div>
-          <div className="item" />
+          <div className="item">
+            <p>Swipe Button</p>
+            <Link to="/swipeButton">
+              <img src="https://user-images.githubusercontent.com/66737450/191913041-74d8a246-d368-46bc-9dca-63474e0a3ce6.png" alt="swipeButton" />
+            </Link>
+            <p>22. 09. 23</p>
+          </div>
+
           <div className="item" />
           <div className="item" />
           <div className="item" />
