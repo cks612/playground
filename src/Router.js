@@ -38,6 +38,7 @@ import GlowingRing from "./components/GlowingRing";
 import QrCodeScanner from "./components/QrCodeScanner";
 import SwipeButton from "./components/SwipeButton";
 import Calculator from "./components/Calculator";
+import CheckboxToggle from "./components/CheckboxToggle";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -84,6 +85,7 @@ export default function Router() {
         <Route path="/qrCodeScanner" element={<QrCodeScanner />} />
         <Route path="/swipeButton" element={<SwipeButton />} />
         <Route path="/calculator" element={<Calculator />} />
+        <Route path="/checkboxToggle" element={<CheckboxToggle />} />
       </Routes>
     </Suspense>
   );

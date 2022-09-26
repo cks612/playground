@@ -203,3 +203,9 @@ https://www.youtube.com/watch?v=L-tPKFxrvLk
 ## Calculator
 
 https://www.youtube.com/watch?v=t6jxqGQduWk
+
+### 2022 09 26
+
+## Checkbox Toggle
+
+https://www.youtube.com/watch?v=jURnijW-JvY

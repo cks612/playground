@@ -252,10 +252,13 @@ const index = () => {
             </Link>
             <p>22. 09. 25</p>
           </div>
-
-          <div className="item" />
-          <div className="item" />
-          <div className="item" />
+          <div className="item">
+            <p>Checkbox Toggle</p>
+            <Link to="/checkboxToggle">
+              <img src="https://user-images.githubusercontent.com/66737450/192262463-50c48603-24ff-4feb-a0e4-5077d80c3e1c.png" alt="checkboxToggle" />
+            </Link>
+            <p>22. 09. 26</p>
+          </div>
         </div>
       </div>
     </div>
