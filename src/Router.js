@@ -39,6 +39,7 @@ import QrCodeScanner from "./components/QrCodeScanner";
 import SwipeButton from "./components/SwipeButton";
 import Calculator from "./components/Calculator";
 import CheckboxToggle from "./components/CheckboxToggle";
+import LoginForm from "./components/LoginForm";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -86,6 +87,7 @@ export default function Router() {
         <Route path="/swipeButton" element={<SwipeButton />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/checkboxToggle" element={<CheckboxToggle />} />
+        <Route path="/loginForm" element={<LoginForm />} />
       </Routes>
     </Suspense>
   );
