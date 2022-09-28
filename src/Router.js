@@ -40,6 +40,7 @@ import SwipeButton from "./components/SwipeButton";
 import Calculator from "./components/Calculator";
 import CheckboxToggle from "./components/CheckboxToggle";
 import LoginForm from "./components/LoginForm";
+import IphoneEffect from "./components/IphoneEffect";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -88,6 +89,7 @@ export default function Router() {
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/checkboxToggle" element={<CheckboxToggle />} />
         <Route path="/loginForm" element={<LoginForm />} />
+        <Route path="/iphone" element={<IphoneEffect />} />
       </Routes>
     </Suspense>
   );

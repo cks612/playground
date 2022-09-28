@@ -1,0 +1,196 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.iphoneWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #fff;
+
+  .box {
+    @include size(300px, 600px);
+    position: relative;
+    background: #666;
+    border-radius: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 3px;
+      background: #000;
+      border-radius: 48px;
+    }
+
+    .inner {
+      @include commonDisplayAttributes(flex, center, null);
+      position: absolute;
+      inset: 3px;
+      background: url("https://user-images.githubusercontent.com/66737450/192760960-eea00184-de96-4b44-ba5f-e41186806007.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 48px;
+      border: 10px solid #000;
+      opacity: 0;
+      transition: 0.5s;
+
+      .island_popup {
+        @include commonDisplayAttributes(flex, space-between, center);
+        position: absolute;
+        top: 10px;
+        width: 90px;
+        height: 25px;
+        background: #000;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          width: 200px;
+          height: 25px;
+        }
+
+        &.active {
+          width: 250px;
+          height: 60px;
+          border-radius: 50px;
+
+          .content {
+            .details {
+              .imgBx {
+                width: 40px;
+                height: 40px;
+                margin-right: 8px;
+              }
+            }
+            .action {
+              i.red {
+                background: #fd443b;
+                color: #fff;
+                border-radius: 50%;
+                box-shadow: 0 0 0 8px #fd443b;
+                margin-right: 12px;
+              }
+              i.green {
+                background: #31d059;
+                color: #fff;
+                border-radius: 50%;
+                box-shadow: 0 0 0 8px #31d059;
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+
+        .content {
+          position: relative;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          padding: 10px;
+          line-height: 25px;
+
+          p {
+            color: #fff;
+            font-size: 0.6em;
+            cursor: default;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s;
+          }
+
+          .action {
+            display: flex;
+            align-items: center;
+            position: relative;
+            gap: 12px;
+            color: #fff;
+            font-size: 0.6em;
+            transition: 0.5s;
+            opacity: 0;
+
+            i.red {
+              color: #fd443b;
+              transform: rotate(135deg);
+              cursor: pointer;
+              transition: 0.5s;
+            }
+            i.green {
+              color: #31d059;
+              cursor: pointer;
+              transition: 0.5s;
+            }
+          }
+
+          .details {
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            .imgBx {
+              position: relative;
+              width: 0;
+              height: 0;
+              background: #fff;
+              border-radius: 50%;
+              overflow: hidden;
+              transition: 0.5s;
+
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+
+        &:hover p,
+        &.active p,
+        &:hover .action,
+        &.active .action {
+          visibility: visible;
+          opacity: 1;
+          transition-delay: 0.25s;
+        }
+      }
+    }
+    &:hover .inner {
+      opacity: 1;
+    }
+
+    .btn {
+      position: absolute;
+      width: 3px;
+      height: 26px;
+      top: 110px;
+      left: -2px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      background: radial-gradient(#ccc, #666, #222);
+      z-index: 10;
+
+      &.btn2 {
+        top: 160px;
+        height: 40px;
+      }
+
+      &.btn3 {
+        top: 220px;
+        height: 40px;
+      }
+    }
+
+    .rightSideBtn {
+      position: absolute;
+      width: 3px;
+      height: 70px;
+      top: 170px;
+      right: -2px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      background: radial-gradient(#ccc, #666, #222);
+      z-index: 10;
+    }
+  }
+}
