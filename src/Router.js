@@ -41,6 +41,7 @@ import Calculator from "./components/Calculator";
 import CheckboxToggle from "./components/CheckboxToggle";
 import LoginForm from "./components/LoginForm";
 import IphoneEffect from "./components/IphoneEffect";
+import Parallax from "./components/Parallax";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -90,6 +91,7 @@ export default function Router() {
         <Route path="/checkboxToggle" element={<CheckboxToggle />} />
         <Route path="/loginForm" element={<LoginForm />} />
         <Route path="/iphone" element={<IphoneEffect />} />
+        <Route path="/parallax" element={<Parallax />} />
       </Routes>
     </Suspense>
   );

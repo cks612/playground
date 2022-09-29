@@ -3,7 +3,7 @@ import "../../styles/_menuHoverEffectStyles.scss";
 
 const MenuHoverEffect = () => {
   return (
-    <section>
+    <section className="menuhover">
       <ul>
         <li>
           <a href="#" data-text="Home">

@@ -1,7 +1,7 @@
 @import "../styles/_mixins.scss";
 @import "../styles/_variables.scss";
 
-section {
+.menuhover {
   @include commonDisplayAttributes(flex, center, center);
   @include size(100%, 100vh);
   position: relative;

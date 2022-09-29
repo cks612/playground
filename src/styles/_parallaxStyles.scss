@@ -1,0 +1,87 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.parallaxWrapper {
+  min-height: 100vh;
+  background: #fff;
+  overflow-x: hidden;
+
+  header {
+    @include commonDisplayAttributes(flex, space-between, center);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 1000;
+
+    .logo {
+      color: #112434;
+      font-weight: 700;
+      font-size: 2em;
+      text-decoration: none;
+    }
+
+    .navigation {
+      @include commonDisplayAttributes(flex, center, center);
+      gap: 40px;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          padding: 6px 15px;
+          color: #112434;
+          border-radius: 20px;
+
+          &:hover,
+          &.active {
+            background: #112434;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .parallax {
+    @include commonDisplayAttributes(flex, center, center);
+    position: relative;
+    height: 100vh;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      pointer-events: none;
+    }
+
+    #text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 4em;
+      color: #112434;
+    }
+  }
+
+  .sec {
+    position: relative;
+    padding: 100px;
+    background: #112434;
+
+    h2 {
+      font-size: 3em;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+}
