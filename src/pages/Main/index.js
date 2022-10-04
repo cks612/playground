@@ -273,8 +273,13 @@ const index = () => {
             </Link>
             <p>22. 09. 28</p>
           </div>
-          <div className="item" />
-          <div className="item" />
+          <div className="item">
+            <p>Search Box</p>
+            <Link to="/searchBox">
+              <img src="https://user-images.githubusercontent.com/66737450/193763323-e003af57-ba03-43d6-a5ab-336bf79146b0.png" alt="searchBox" />
+            </Link>
+            <p>22. 10. 04</p>
+          </div>
           <div className="item" />
           <div className="item" />
           <div className="item" />
