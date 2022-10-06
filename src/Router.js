@@ -43,6 +43,7 @@ import LoginForm from "./components/LoginForm";
 import IphoneEffect from "./components/IphoneEffect";
 import Parallax from "./components/Parallax";
 import SearchBox from "./components/SearchBox";
+import NavigationSearchBar from "./components/NavigationMenuSearchBar";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -94,6 +95,7 @@ export default function Router() {
         <Route path="/iphone" element={<IphoneEffect />} />
         <Route path="/parallax" element={<Parallax />} />
         <Route path="/searchBox" element={<SearchBox />} />
+        <Route path="/navigationSearchBar" element={<NavigationSearchBar />} />
       </Routes>
     </Suspense>
   );

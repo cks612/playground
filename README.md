@@ -227,3 +227,9 @@ https://www.youtube.com/watch?v=nqnJx_v5VF8
 ## Search Box
 
 https://www.youtube.com/watch?v=WL9XtJtlimw
+
+### 2022 10 06
+
+## Responsive SearchBar
+
+https://www.youtube.com/watch?v=zQngLMkngQE

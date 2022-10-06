@@ -1,0 +1,175 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.navigationSearchBarWrapper {
+  // @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #dee1e2;
+  overflow-x: hidden;
+
+  header {
+    @include commonDisplayAttributes(flex, space-between, center);
+    @include size(100%, 80px);
+    position: absolute;
+    top: 50;
+    left: 0%;
+    padding: 20px 40px;
+    background: #fff;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+
+    .logo {
+      color: #333;
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .group {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        position: relative;
+        gap: 30px;
+
+        li {
+          list-style: none;
+
+          a {
+            position: relative;
+            text-decoration: none;
+            font-size: 1em;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+
+            &::before {
+              @include size(100%, 2px);
+              content: "";
+              position: absolute;
+              bottom: -2px;
+              background: #333;
+              transform: scaleX(0);
+              transition: transform 0.5s ease-in-out;
+              transform-origin: right;
+            }
+
+            &:hover::before {
+              transform: scaleX(1);
+              transform-origin: left;
+            }
+          }
+        }
+      }
+
+      .search {
+        @include commonDisplayAttributes(flex, center, center);
+        position: relative;
+        font-size: 1em;
+        z-index: 10;
+        cursor: pointer;
+
+        .icon {
+          display: flex;
+          gap: 10px;
+
+          .searchBtn {
+            position: relative;
+            left: 30px;
+            transition: 0.5s ease-in-out;
+
+            &.active {
+              left: 0;
+            }
+          }
+
+          .closeBtn {
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s;
+            scale: 0;
+
+            &.active {
+              opacity: 1;
+              visibility: visible;
+              transition: 0.5s;
+              scale: 1;
+            }
+          }
+        }
+        @media (max-width: 800px) {
+          left: 0;
+        }
+      }
+
+      .menuToggle {
+        position: relative;
+        display: none;
+
+        @media (max-width: 800px) {
+          position: absolute;
+          display: block;
+          transform: translateX(50px);
+          z-index: 10;
+          cursor: pointer;
+        }
+      }
+      @media (max-width: 800px) {
+        .navigation {
+          position: absolute;
+          display: block;
+          opacity: 0;
+          visibility: hidden;
+          left: 100%;
+        }
+      }
+    }
+
+    .searchBox {
+      @include size(100%, 100%);
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: -100%;
+      padding: 0 30px;
+      background: #fff;
+      transition: 0.5s ease-in-out;
+
+      input {
+        @include size(100%, 50px);
+        border: none;
+        outline: none;
+        color: #333;
+        font-size: 1.25em;
+        background: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      }
+
+      &.active {
+        right: 0;
+      }
+    }
+  }
+
+  header.open {
+    .navigation {
+      @include size(100%, calc(100vh - 80px));
+      display: flex;
+      flex-direction: column;
+      top: 80px;
+      left: 0;
+      padding: 40px;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      background: #fff;
+      opacity: 1;
+      visibility: visible;
+
+      li a {
+        font-size: 1.25em;
+      }
+    }
+  }
+}

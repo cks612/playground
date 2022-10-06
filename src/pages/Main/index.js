@@ -280,6 +280,13 @@ const index = () => {
             </Link>
             <p>22. 10. 04</p>
           </div>
+          <div className="item">
+            <p>Responsive SearchBar</p>
+            <Link to="/navigationSearchBar">
+              <img src="https://user-images.githubusercontent.com/66737450/194230620-1decc808-af83-492f-ad5a-ecdcc60836cb.png" alt="navigationSearchBar" />
+            </Link>
+            <p>22. 10. 06</p>
+          </div>
           <div className="item" />
           <div className="item" />
         </div>
