@@ -44,6 +44,7 @@ import IphoneEffect from "./components/IphoneEffect";
 import Parallax from "./components/Parallax";
 import SearchBox from "./components/SearchBox";
 import NavigationSearchBar from "./components/NavigationMenuSearchBar";
+import BlockRotate from "./components/BlockRotate";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -96,6 +97,7 @@ export default function Router() {
         <Route path="/parallax" element={<Parallax />} />
         <Route path="/searchBox" element={<SearchBox />} />
         <Route path="/navigationSearchBar" element={<NavigationSearchBar />} />
+        <Route path="/blockRotate" element={<BlockRotate />} />
       </Routes>
     </Suspense>
   );

@@ -233,3 +233,9 @@ https://www.youtube.com/watch?v=WL9XtJtlimw
 ## Responsive SearchBar
 
 https://www.youtube.com/watch?v=zQngLMkngQE
+
+### 2022 10 09
+
+## Block Rotate CSS
+
+https://www.youtube.com/watch?v=-DBFPF4LDUo&t=45s

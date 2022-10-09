@@ -1,0 +1,81 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.blockWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #222;
+
+  .box {
+    position: relative;
+  }
+
+  .loader {
+    @include size(150px, 150px);
+    position: relative;
+    animation: loaderChangeAnimate 24s steps(12) infinite;
+
+    span {
+      @include size(100%, 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(calc(30deg * var(--i)));
+
+      &::before {
+        @include size(20px, 20px);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      &:nth-child(3n + 3)::before {
+        background: #fff;
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+        transform-origin: 75px;
+        animation: boxAnimate 2s linear infinite;
+      }
+    }
+  }
+
+  h3 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 0.85em;
+    font-weight: 300;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+    b {
+      color: #fff;
+      font-weight: 500;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+    }
+  }
+}
+@keyframes loaderChangeAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes boxAnimate {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+  75%,
+  90%,
+  100% {
+    transform: rotate(180deg);
+  }
+}

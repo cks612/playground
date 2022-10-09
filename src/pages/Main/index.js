@@ -287,6 +287,13 @@ const index = () => {
             </Link>
             <p>22. 10. 06</p>
           </div>
+          <div className="item">
+            <p>Block Rotate CSS</p>
+            <Link to="/blockRotate">
+              <img src="https://user-images.githubusercontent.com/66737450/194747650-bf949dc7-ebf0-4acc-9653-47b6b4de99c0.png" alt="blockRotate" />
+            </Link>
+            <p>22. 10. 09</p>
+          </div>
           <div className="item" />
           <div className="item" />
           <div className="item" />
