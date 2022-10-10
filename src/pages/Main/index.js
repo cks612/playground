@@ -294,10 +294,6 @@ const index = () => {
             </Link>
             <p>22. 10. 09</p>
           </div>
-          <div className="item" />
-          <div className="item" />
-          <div className="item" />
-          <div className="item" />
         </div>
       </div>
     </div>
