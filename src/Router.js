@@ -45,6 +45,7 @@ import Parallax from "./components/Parallax";
 import SearchBox from "./components/SearchBox";
 import NavigationSearchBar from "./components/NavigationMenuSearchBar";
 import BlockRotate from "./components/BlockRotate";
+import AnimatedCubes from "./components/AnimatedCubes";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -98,6 +99,7 @@ export default function Router() {
         <Route path="/searchBox" element={<SearchBox />} />
         <Route path="/navigationSearchBar" element={<NavigationSearchBar />} />
         <Route path="/blockRotate" element={<BlockRotate />} />
+        <Route path="/animatedCubes" element={<AnimatedCubes />} />
       </Routes>
     </Suspense>
   );

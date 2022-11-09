@@ -239,3 +239,9 @@ https://www.youtube.com/watch?v=zQngLMkngQE
 ## Block Rotate CSS
 
 https://www.youtube.com/watch?v=-DBFPF4LDUo&t=45s
+
+### 2022 11 09
+
+## Animated Cubes
+
+https://www.youtube.com/watch?v=Jnk2VloDPFI
