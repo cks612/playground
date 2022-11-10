@@ -301,6 +301,13 @@ const index = () => {
             </Link>
             <p>22. 11. 09</p>
           </div>
+          <div className="item">
+            <p>DashBoard Side Bar</p>
+            <Link to="/dashBoardSideBar">
+              <img src="https://user-images.githubusercontent.com/66737450/201020195-73ed1996-5c6b-4a85-8152-8803cd226818.png" alt="blockRotate" />
+            </Link>
+            <p>22. 11. 10</p>
+          </div>
         </div>
       </div>
     </div>

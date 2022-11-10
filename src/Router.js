@@ -46,6 +46,7 @@ import SearchBox from "./components/SearchBox";
 import NavigationSearchBar from "./components/NavigationMenuSearchBar";
 import BlockRotate from "./components/BlockRotate";
 import AnimatedCubes from "./components/AnimatedCubes";
+import SideBar from "./components/DashBoardSideBar";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -100,6 +101,7 @@ export default function Router() {
         <Route path="/navigationSearchBar" element={<NavigationSearchBar />} />
         <Route path="/blockRotate" element={<BlockRotate />} />
         <Route path="/animatedCubes" element={<AnimatedCubes />} />
+        <Route path="/dashBoardSideBar" element={<SideBar />} />
       </Routes>
     </Suspense>
   );
