@@ -47,6 +47,7 @@ import NavigationSearchBar from "./components/NavigationMenuSearchBar";
 import BlockRotate from "./components/BlockRotate";
 import AnimatedCubes from "./components/AnimatedCubes";
 import SideBar from "./components/DashBoardSideBar";
+import ButtonHover from "./components/ButtonHover";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -102,6 +103,7 @@ export default function Router() {
         <Route path="/blockRotate" element={<BlockRotate />} />
         <Route path="/animatedCubes" element={<AnimatedCubes />} />
         <Route path="/dashBoardSideBar" element={<SideBar />} />
+        <Route path="/buttonHover" element={<ButtonHover />} />
       </Routes>
     </Suspense>
   );
