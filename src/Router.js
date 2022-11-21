@@ -48,6 +48,7 @@ import BlockRotate from "./components/BlockRotate";
 import AnimatedCubes from "./components/AnimatedCubes";
 import SideBar from "./components/DashBoardSideBar";
 import ButtonHover from "./components/ButtonHover";
+import LuckySpinning from "./components/LuckySpinning";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -104,6 +105,7 @@ export default function Router() {
         <Route path="/animatedCubes" element={<AnimatedCubes />} />
         <Route path="/dashBoardSideBar" element={<SideBar />} />
         <Route path="/buttonHover" element={<ButtonHover />} />
+        <Route path="/luckySpinning" element={<LuckySpinning />} />
       </Routes>
     </Suspense>
   );

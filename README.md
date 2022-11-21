@@ -251,3 +251,9 @@ https://www.youtube.com/watch?v=Jnk2VloDPFI
 ## Button Hover
 
 https://www.youtube.com/watch?v=CTIfi3mbgag
+
+### 2022 11 21
+
+## Lucky Spinning
+
+https://www.youtube.com/watch?v=F3-lK_-PQr0
