@@ -322,6 +322,13 @@ const index = () => {
             </Link>
             <p>22. 11. 21</p>
           </div>
+          <div className="item">
+            <p>Social Menu</p>
+            <Link to="/socialMenu">
+              <img src="https://user-images.githubusercontent.com/66737450/203279740-928b72f5-ddd0-4a29-a257-fe9a2fcba34a.png" alt="socialMenu" />
+            </Link>
+            <p>22. 11. 21</p>
+          </div>
         </div>
       </div>
     </div>

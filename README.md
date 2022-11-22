@@ -257,3 +257,9 @@ https://www.youtube.com/watch?v=CTIfi3mbgag
 ## Lucky Spinning
 
 https://www.youtube.com/watch?v=F3-lK_-PQr0
+
+### 2022 11 22
+
+## Social Menu
+
+https://www.youtube.com/watch?v=Af9NqzFIEPs
