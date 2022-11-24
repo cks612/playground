@@ -50,6 +50,7 @@ import SideBar from "./components/DashBoardSideBar";
 import ButtonHover from "./components/ButtonHover";
 import LuckySpinning from "./components/LuckySpinning";
 import SocialMenu from "./SocialMenu";
+import FloatingText from "./components/FloatingText";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -108,6 +109,7 @@ export default function Router() {
         <Route path="/buttonHover" element={<ButtonHover />} />
         <Route path="/luckySpinning" element={<LuckySpinning />} />
         <Route path="/socialMenu" element={<SocialMenu />} />
+        <Route path="/floatingText" element={<FloatingText />} />
       </Routes>
     </Suspense>
   );

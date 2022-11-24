@@ -329,6 +329,13 @@ const index = () => {
             </Link>
             <p>22. 11. 21</p>
           </div>
+          <div className="item">
+            <p>Floating Text</p>
+            <Link to="/floatingText">
+              <img src="https://user-images.githubusercontent.com/66737450/203712636-3d17eaa7-e373-40e0-b48f-1b495bca7678.png" alt="floatingText" />
+            </Link>
+            <p>22. 11. 24</p>
+          </div>
         </div>
       </div>
     </div>
