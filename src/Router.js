@@ -52,6 +52,7 @@ import LuckySpinning from "./components/LuckySpinning";
 import SocialMenu from "./SocialMenu";
 import FloatingText from "./components/FloatingText";
 import LoginPage from "./components/LoginPage";
+import SunEffect from "./components/SunEffect";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -112,6 +113,7 @@ export default function Router() {
         <Route path="/socialMenu" element={<SocialMenu />} />
         <Route path="/floatingText" element={<FloatingText />} />
         <Route path="/loginPage" element={<LoginPage />} />
+        <Route path="/sunEffect" element={<SunEffect />} />
       </Routes>
     </Suspense>
   );
