@@ -281,3 +281,9 @@ https://www.youtube.com/watch?v=u4kuVki1V20
 ## Sun Effect
 
 https://www.youtube.com/watch?v=_74PiHCjNbs
+
+### 2022 11 28
+
+## Movie Card
+
+https://www.youtube.com/watch?v=sx0QXhcgplU

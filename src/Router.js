@@ -53,6 +53,7 @@ import SocialMenu from "./SocialMenu";
 import FloatingText from "./components/FloatingText";
 import LoginPage from "./components/LoginPage";
 import SunEffect from "./components/SunEffect";
+import MovieCard from "./components/MovieCard";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -114,6 +115,7 @@ export default function Router() {
         <Route path="/floatingText" element={<FloatingText />} />
         <Route path="/loginPage" element={<LoginPage />} />
         <Route path="/sunEffect" element={<SunEffect />} />
+        <Route path="/movieCard" element={<MovieCard />} />
       </Routes>
     </Suspense>
   );
