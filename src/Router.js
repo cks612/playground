@@ -54,6 +54,7 @@ import FloatingText from "./components/FloatingText";
 import LoginPage from "./components/LoginPage";
 import SunEffect from "./components/SunEffect";
 import MovieCard from "./components/MovieCard";
+import PasswordChecker from "./components/PasswordChecker";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -116,6 +117,7 @@ export default function Router() {
         <Route path="/loginPage" element={<LoginPage />} />
         <Route path="/sunEffect" element={<SunEffect />} />
         <Route path="/movieCard" element={<MovieCard />} />
+        <Route path="/passwordChecker" element={<PasswordChecker />} />
       </Routes>
     </Suspense>
   );

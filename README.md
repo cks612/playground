@@ -287,3 +287,9 @@ https://www.youtube.com/watch?v=_74PiHCjNbs
 ## Movie Card
 
 https://www.youtube.com/watch?v=sx0QXhcgplU
+
+### 2022 12 09
+
+## Password Checker
+
+https://www.youtube.com/watch?v=AIgLWy604AA
