@@ -293,3 +293,9 @@ https://www.youtube.com/watch?v=sx0QXhcgplU
 ## Password Checker
 
 https://www.youtube.com/watch?v=AIgLWy604AA
+
+### 2022 12 11
+
+## Infinite Tricker
+
+https://www.youtube.com/watch?v=AYf3nhDmgzA
