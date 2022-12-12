@@ -299,3 +299,9 @@ https://www.youtube.com/watch?v=AIgLWy604AA
 ## Infinite Tricker
 
 https://www.youtube.com/watch?v=AYf3nhDmgzA
+
+### 2022 12 12
+
+## Dots Navigation
+
+https://www.youtube.com/watch?v=iVt1ElToqHo

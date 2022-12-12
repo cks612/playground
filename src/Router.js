@@ -56,6 +56,7 @@ import SunEffect from "./components/SunEffect";
 import MovieCard from "./components/MovieCard";
 import PasswordChecker from "./components/PasswordChecker";
 import InfiniteTricker from "./components/InfiniteTricker";
+import DotsNavigation from "./components/DotsNavigation";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -120,6 +121,7 @@ export default function Router() {
         <Route path="/movieCard" element={<MovieCard />} />
         <Route path="/passwordChecker" element={<PasswordChecker />} />
         <Route path="/infiniteTricker" element={<InfiniteTricker />} />
+        <Route path="/dotsNavigation" element={<DotsNavigation />} />
       </Routes>
     </Suspense>
   );
