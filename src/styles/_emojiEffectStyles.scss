@@ -1,0 +1,16 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.wrapper {
+  min-height: 100vh;
+  background: #111;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    pointer-events: none;
+    width: 10px;
+    height: 10px;
+    background: red;
+  }
+}
