@@ -305,3 +305,9 @@ https://www.youtube.com/watch?v=AYf3nhDmgzA
 ## Dots Navigation
 
 https://www.youtube.com/watch?v=iVt1ElToqHo
+
+### 2022 12 13
+
+## Emoji Effect
+
+https://www.youtube.com/watch?v=RTp8jquvh-c

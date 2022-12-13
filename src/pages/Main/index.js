@@ -378,6 +378,13 @@ const index = () => {
             </Link>
             <p>22. 12. 12</p>
           </div>
+          <div className="item">
+            <p>Emoji Effect</p>
+            <Link to="/emojiEffect">
+              <img src="https://user-images.githubusercontent.com/66737450/207383131-00433ba9-05b9-4679-ac73-2cd540d3c722.png" alt="emojiEffects" />
+            </Link>
+            <p>22. 12. 13</p>
+          </div>
         </div>
       </div>
     </div>

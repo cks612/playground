@@ -1,7 +1,8 @@
 @import "../styles/_mixins.scss";
 @import "../styles/_variables.scss";
 
-.wrapper {
+.emojiWrapper {
+  width: 100%;
   min-height: 100vh;
   background: #111;
   overflow: hidden;
@@ -9,8 +10,27 @@
   span {
     position: absolute;
     pointer-events: none;
-    width: 10px;
-    height: 10px;
-    background: red;
+    animation: emojiAnimate 1s linear infinite;
+  }
+}
+
+@keyframes emojiAnimate {
+  0% {
+    translate: 0 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    translate: 0 100px;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    translate: 0 80px;
+    opacity: 0;
   }
 }
