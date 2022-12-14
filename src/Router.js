@@ -58,6 +58,7 @@ import PasswordChecker from "./components/PasswordChecker";
 import InfiniteTricker from "./components/InfiniteTricker";
 import DotsNavigation from "./components/DotsNavigation";
 import EmojiEffect from "./components/EmojiEffect";
+import CreativeMenu from "./components/CreativeMenu";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -124,6 +125,7 @@ export default function Router() {
         <Route path="/infiniteTricker" element={<InfiniteTricker />} />
         <Route path="/dotsNavigation" element={<DotsNavigation />} />
         <Route path="/emojiEffect" element={<EmojiEffect />} />
+        <Route path="/creativeMenu" element={<CreativeMenu />} />
       </Routes>
     </Suspense>
   );
