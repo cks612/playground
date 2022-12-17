@@ -392,6 +392,13 @@ const index = () => {
             </Link>
             <p>22. 12. 14</p>
           </div>
+          <div className="item">
+            <p>Elastic Line</p>
+            <Link to="/elasticLine">
+              <img src="https://user-images.githubusercontent.com/66737450/208243404-5037b462-5d81-4753-afba-fd806cf942a3.png" alt="elasticLine" />
+            </Link>
+            <p>22. 12. 17</p>
+          </div>
         </div>
       </div>
     </div>

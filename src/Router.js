@@ -59,6 +59,7 @@ import InfiniteTricker from "./components/InfiniteTricker";
 import DotsNavigation from "./components/DotsNavigation";
 import EmojiEffect from "./components/EmojiEffect";
 import CreativeMenu from "./components/CreativeMenu";
+import ElasticLine from "./components/ElasticLine";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -126,6 +127,7 @@ export default function Router() {
         <Route path="/dotsNavigation" element={<DotsNavigation />} />
         <Route path="/emojiEffect" element={<EmojiEffect />} />
         <Route path="/creativeMenu" element={<CreativeMenu />} />
+        <Route path="/elasticLine" element={<ElasticLine />} />
       </Routes>
     </Suspense>
   );
