@@ -399,6 +399,13 @@ const index = () => {
             </Link>
             <p>22. 12. 17</p>
           </div>
+          <div className="item">
+            <p>Next Level</p>
+            <Link to="/nextLevel">
+              <img src="https://user-images.githubusercontent.com/66737450/208303674-901a16d2-bc5e-4957-9d60-c687c01ae0ec.png" alt="nextLevel" />
+            </Link>
+            <p>22. 12. 18</p>
+          </div>
         </div>
       </div>
     </div>

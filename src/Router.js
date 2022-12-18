@@ -60,6 +60,7 @@ import DotsNavigation from "./components/DotsNavigation";
 import EmojiEffect from "./components/EmojiEffect";
 import CreativeMenu from "./components/CreativeMenu";
 import ElasticLine from "./components/ElasticLine";
+import NextLevel from "./components/NextLevel";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -128,6 +129,7 @@ export default function Router() {
         <Route path="/emojiEffect" element={<EmojiEffect />} />
         <Route path="/creativeMenu" element={<CreativeMenu />} />
         <Route path="/elasticLine" element={<ElasticLine />} />
+        <Route path="/nextLevel" element={<NextLevel />} />
       </Routes>
     </Suspense>
   );
