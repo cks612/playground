@@ -61,6 +61,7 @@ import EmojiEffect from "./components/EmojiEffect";
 import CreativeMenu from "./components/CreativeMenu";
 import ElasticLine from "./components/ElasticLine";
 import NextLevel from "./components/NextLevel";
+import Countdown from "./components/Countdown";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -130,6 +131,7 @@ export default function Router() {
         <Route path="/creativeMenu" element={<CreativeMenu />} />
         <Route path="/elasticLine" element={<ElasticLine />} />
         <Route path="/nextLevel" element={<NextLevel />} />
+        <Route path="/countdown" element={<Countdown />} />
       </Routes>
     </Suspense>
   );
