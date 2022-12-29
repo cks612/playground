@@ -62,6 +62,7 @@ import CreativeMenu from "./components/CreativeMenu";
 import ElasticLine from "./components/ElasticLine";
 import NextLevel from "./components/NextLevel";
 import Countdown from "./components/Countdown";
+import Christmas from "./components/Christmas";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -132,6 +133,7 @@ export default function Router() {
         <Route path="/elasticLine" element={<ElasticLine />} />
         <Route path="/nextLevel" element={<NextLevel />} />
         <Route path="/countdown" element={<Countdown />} />
+        <Route path="/christmas" element={<Christmas />} />
       </Routes>
     </Suspense>
   );
