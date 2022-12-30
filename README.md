@@ -341,3 +341,9 @@ https://www.youtube.com/watch?v=8y4dFoE-nlU
 ## Christmas
 
 https://www.youtube.com/watch?v=adzFNSlzLX0
+
+### 2022 12 30
+
+## Gradient Card
+
+https://www.youtube.com/watch?v=fj-rF4shDgA
