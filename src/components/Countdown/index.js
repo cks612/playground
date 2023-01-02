@@ -24,7 +24,7 @@ const Countdown = () => {
     sec_dot: {},
   });
 
-  let endDate = "01/01/2023 00:00:00";
+  let endDate = "01/01/2024 00:00:00";
   const x = setInterval(() => {
     const now = new Date(endDate).getTime();
     const countDown = new Date().getTime();
