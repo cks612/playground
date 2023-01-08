@@ -427,6 +427,13 @@ const index = () => {
             </Link>
             <p>22. 12. 30</p>
           </div>
+          <div className="item">
+            <p>Glass Ball Particles</p>
+            <Link to="/glassBall">
+              <img src="https://user-images.githubusercontent.com/66737450/211184900-d1a33503-22f8-440f-8605-7aacfa11430b.png" alt="glassBall" />
+            </Link>
+            <p>23. 01. 08</p>
+          </div>
         </div>
       </div>
     </div>

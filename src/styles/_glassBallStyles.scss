@@ -1,0 +1,99 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.glassBallWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #132730;
+
+  .ball {
+    @include commonDisplayAttributes(flex, center, center);
+    position: relative;
+    width: 600px;
+    height: 600px;
+    box-shadow: inset 0 25px 70px rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      width: 100%;
+      height: 100px;
+      border-radius: 50%;
+      background: radial-gradient(#0003, #0003, transparent, transparent);
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("https://user-images.githubusercontent.com/66737450/211184652-3c38fbfb-a656-44b2-a1b2-2d8a9f23be00.png");
+      background-position: center;
+      background-size: 600px;
+      background-repeat: no-repeat;
+      opacity: 0;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    .circle {
+      @include commonDisplayAttributes(flex, center, flex-start);
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      animation: ballAnimate 15s linear infinite, particlesAnimate 4s ease-in-out infinite;
+
+      &:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        animation: ballAnimate 5s linear infinite, particlesAnimate 6s ease-in-out infinite;
+      }
+      &:nth-child(3) {
+        width: 50px;
+        height: 50px;
+        animation: ballAnimate 10s linear infinite, particlesAnimate 7s ease-in-out infinite;
+      }
+      &:nth-child(4) {
+        width: 80px;
+        height: 80px;
+        animation: ballAnimate 7s linear infinite, particlesAnimate 10s ease-in-out infinite;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        background: var(--clr);
+        border-radius: 50%;
+        box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr), 40px -70px 0 var(--clr), 40px -70px 20px var(--clr), 70px -70px 0 var(--clr),
+          70px -70px 20px var(--clr), -70px 150px 0 var(--clr), -70px -150px 20px var(--clr);
+        animation: ballAnimate 10s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes ballAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes particlesAnimate {
+  0%,
+  100% {
+    scale: 0.5;
+  }
+  50% {
+    scale: 0.5;
+  }
+}

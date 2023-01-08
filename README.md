@@ -347,3 +347,9 @@ https://www.youtube.com/watch?v=adzFNSlzLX0
 ## Gradient Card
 
 https://www.youtube.com/watch?v=fj-rF4shDgA
+
+### 2023 01 08
+
+## Glass Ball Particles Effects
+
+https://www.youtube.com/watch?v=BAZ9df5bx-8

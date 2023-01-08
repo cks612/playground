@@ -64,6 +64,7 @@ import NextLevel from "./components/NextLevel";
 import Countdown from "./components/Countdown";
 import Christmas from "./components/Christmas";
 import GradientCard from "./components/GradientCard";
+import GlassBall from "./components/GlassBall";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -136,6 +137,7 @@ export default function Router() {
         <Route path="/countdown" element={<Countdown />} />
         <Route path="/christmas" element={<Christmas />} />
         <Route path="/gradientCard" element={<GradientCard />} />
+        <Route path="/glassBall" element={<GlassBall />} />
       </Routes>
     </Suspense>
   );
