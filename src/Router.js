@@ -66,6 +66,7 @@ import Christmas from "./components/Christmas";
 import GradientCard from "./components/GradientCard";
 import GlassBall from "./components/GlassBall";
 import AnimatedLogin from "./components/AnimatedLoginForm";
+import LoginRegistartionForm from "./components/LoginRegistration";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -140,6 +141,7 @@ export default function Router() {
         <Route path="/gradientCard" element={<GradientCard />} />
         <Route path="/glassBall" element={<GlassBall />} />
         <Route path="/animatedLogin" element={<AnimatedLogin />} />
+        <Route path="/loginRegistartionForm" element={<LoginRegistartionForm />} />
       </Routes>
     </Suspense>
   );
