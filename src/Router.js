@@ -67,6 +67,7 @@ import GradientCard from "./components/GradientCard";
 import GlassBall from "./components/GlassBall";
 import AnimatedLogin from "./components/AnimatedLoginForm";
 import LoginRegistartionForm from "./components/LoginRegistration";
+import AnimatedClock from "./components/AnimatedClock";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -142,6 +143,7 @@ export default function Router() {
         <Route path="/glassBall" element={<GlassBall />} />
         <Route path="/animatedLogin" element={<AnimatedLogin />} />
         <Route path="/loginRegistartionForm" element={<LoginRegistartionForm />} />
+        <Route path="/animatedClock" element={<AnimatedClock />} />
       </Routes>
     </Suspense>
   );

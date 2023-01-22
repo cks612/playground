@@ -359,3 +359,9 @@ https://www.youtube.com/watch?v=BAZ9df5bx-8
 ## Animated Login
 
 https://www.youtube.com/watch?v=yLcal6M4t68
+
+### 2023 01 22
+
+## Animated Clock
+
+https://www.youtube.com/watch?v=D1WsrwBGCeI

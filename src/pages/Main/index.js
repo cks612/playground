@@ -448,6 +448,13 @@ const index = () => {
             </Link>
             <p>23. 01. 18</p>
           </div>
+          <div className="item">
+            <p>Animated Clock</p>
+            <Link to="/animatedClock">
+              <img src="https://user-images.githubusercontent.com/66737450/213906428-8030da75-b6c6-49e2-a7e2-f9a1f1b0df75.png" alt="animatedClock" />
+            </Link>
+            <p>23. 01. 22</p>
+          </div>
         </div>
       </div>
     </div>
