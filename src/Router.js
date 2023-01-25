@@ -68,6 +68,7 @@ import GlassBall from "./components/GlassBall";
 import AnimatedLogin from "./components/AnimatedLoginForm";
 import LoginRegistartionForm from "./components/LoginRegistration";
 import AnimatedClock from "./components/AnimatedClock";
+import GlowingLine from "./components/GlowingLine";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -144,6 +145,7 @@ export default function Router() {
         <Route path="/animatedLogin" element={<AnimatedLogin />} />
         <Route path="/loginRegistartionForm" element={<LoginRegistartionForm />} />
         <Route path="/animatedClock" element={<AnimatedClock />} />
+        <Route path="/glowingLine" element={<GlowingLine />} />
       </Routes>
     </Suspense>
   );

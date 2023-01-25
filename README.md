@@ -365,3 +365,9 @@ https://www.youtube.com/watch?v=yLcal6M4t68
 ## Animated Clock
 
 https://www.youtube.com/watch?v=D1WsrwBGCeI
+
+### 2023 01 25
+
+## Glowing Line
+
+https://www.youtube.com/watch?v=O6SM3qWLu0Y
