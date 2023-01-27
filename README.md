@@ -371,3 +371,9 @@ https://www.youtube.com/watch?v=D1WsrwBGCeI
 ## Glowing Line
 
 https://www.youtube.com/watch?v=O6SM3qWLu0Y
+
+### 2023 01 27
+
+## Star Rating
+
+https://www.youtube.com/watch?v=FNqeaJaoboE
