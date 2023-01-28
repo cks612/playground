@@ -70,6 +70,7 @@ import LoginRegistartionForm from "./components/LoginRegistration";
 import AnimatedClock from "./components/AnimatedClock";
 import GlowingLine from "./components/GlowingLine";
 import StarRating from "./components/StarRating";
+import RunningCar from "./components/RunnigCar";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -148,6 +149,7 @@ export default function Router() {
         <Route path="/animatedClock" element={<AnimatedClock />} />
         <Route path="/glowingLine" element={<GlowingLine />} />
         <Route path="/starRating" element={<StarRating />} />
+        <Route path="/runningCar" element={<RunningCar />} />
       </Routes>
     </Suspense>
   );
