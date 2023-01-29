@@ -71,6 +71,7 @@ import AnimatedClock from "./components/AnimatedClock";
 import GlowingLine from "./components/GlowingLine";
 import StarRating from "./components/StarRating";
 import RunningCar from "./components/RunnigCar";
+import TabMenu from "./components/TabMenu";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -150,6 +151,7 @@ export default function Router() {
         <Route path="/glowingLine" element={<GlowingLine />} />
         <Route path="/starRating" element={<StarRating />} />
         <Route path="/runningCar" element={<RunningCar />} />
+        <Route path="/tabMenu" element={<TabMenu />} />
       </Routes>
     </Suspense>
   );

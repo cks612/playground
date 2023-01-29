@@ -476,6 +476,13 @@ const index = () => {
             </Link>
             <p>23. 01. 28</p>
           </div>
+          <div className="item">
+            <p>Tab Menu</p>
+            <Link to="/tabMenu">
+              <img src="https://user-images.githubusercontent.com/66737450/215327156-9d08d3b2-cc87-4c87-8a9f-ee9ecd99cc8c.png" alt="tabMenu" />
+            </Link>
+            <p>23. 01. 29</p>
+          </div>
         </div>
       </div>
     </div>
