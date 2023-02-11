@@ -72,6 +72,7 @@ import GlowingLine from "./components/GlowingLine";
 import StarRating from "./components/StarRating";
 import RunningCar from "./components/RunnigCar";
 import TabMenu from "./components/TabMenu";
+import ProductCard from "./components/ProductCard";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -152,6 +153,7 @@ export default function Router() {
         <Route path="/starRating" element={<StarRating />} />
         <Route path="/runningCar" element={<RunningCar />} />
         <Route path="/tabMenu" element={<TabMenu />} />
+        <Route path="/productCard" element={<ProductCard />} />
       </Routes>
     </Suspense>
   );
