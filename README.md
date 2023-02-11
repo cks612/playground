@@ -389,3 +389,9 @@ https://www.youtube.com/watch?v=3sQupmAMUhs
 ## Tab Menu
 
 https://www.youtube.com/watch?v=1-U4s6oW0qw
+
+### 2023 02 11
+
+## Product Card
+
+https://www.youtube.com/watch?v=sHcYkyddTfk
