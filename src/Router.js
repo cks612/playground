@@ -73,6 +73,7 @@ import StarRating from "./components/StarRating";
 import RunningCar from "./components/RunnigCar";
 import TabMenu from "./components/TabMenu";
 import ProductCard from "./components/ProductCard";
+import AnimatedGaming from "./components/AnimatedGaming";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -154,6 +155,7 @@ export default function Router() {
         <Route path="/runningCar" element={<RunningCar />} />
         <Route path="/tabMenu" element={<TabMenu />} />
         <Route path="/productCard" element={<ProductCard />} />
+        <Route path="/animatedGaming" element={<AnimatedGaming />} />
       </Routes>
     </Suspense>
   );

@@ -395,3 +395,9 @@ https://www.youtube.com/watch?v=1-U4s6oW0qw
 ## Product Card
 
 https://www.youtube.com/watch?v=sHcYkyddTfk
+
+### 2023 02 12
+
+## Animated Gaming
+
+https://www.youtube.com/watch?v=cV3Al2dwCsw
