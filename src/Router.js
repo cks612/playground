@@ -74,6 +74,7 @@ import RunningCar from "./components/RunnigCar";
 import TabMenu from "./components/TabMenu";
 import ProductCard from "./components/ProductCard";
 import AnimatedGaming from "./components/AnimatedGaming";
+import BackgroundParticles from "./components/BackgroundParticles";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -156,6 +157,7 @@ export default function Router() {
         <Route path="/tabMenu" element={<TabMenu />} />
         <Route path="/productCard" element={<ProductCard />} />
         <Route path="/animatedGaming" element={<AnimatedGaming />} />
+        <Route path="/backgroundParticles" element={<BackgroundParticles />} />
       </Routes>
     </Suspense>
   );

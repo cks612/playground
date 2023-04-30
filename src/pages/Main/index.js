@@ -492,10 +492,17 @@ const index = () => {
           </div>
           <div className="item">
             <p>Animated Gaming</p>
-            <Link to="/productCard">
+            <Link to="/animatedGaming">
               <img src="https://user-images.githubusercontent.com/66737450/218289754-406d9351-185c-4605-98ac-e3e98ecfcdd9.png" alt="animatedCard" />
             </Link>
             <p>23. 02. 12</p>
+          </div>
+          <div className="item">
+            <p>Background Particles</p>
+            <Link to="/backgroundParticles">
+              <img src="https://user-images.githubusercontent.com/66737450/235340058-02e41b76-aba5-4fba-b655-b2198c942aab.png" alt="backgroundParticles" />
+            </Link>
+            <p>23. 04. 30</p>
           </div>
         </div>
       </div>

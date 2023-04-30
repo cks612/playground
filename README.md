@@ -401,3 +401,9 @@ https://www.youtube.com/watch?v=sHcYkyddTfk
 ## Animated Gaming
 
 https://www.youtube.com/watch?v=cV3Al2dwCsw
+
+### 2023 04 30
+
+## Background Particles
+
+https://www.youtube.com/watch?v=-EC9G9VKqjo
