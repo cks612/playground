@@ -407,3 +407,9 @@ https://www.youtube.com/watch?v=cV3Al2dwCsw
 ## Background Particles
 
 https://www.youtube.com/watch?v=-EC9G9VKqjo
+
+### 2023 04 30
+
+## Zero Collision
+
+https://www.youtube.com/watch?v=5OtFKQ4g8IE

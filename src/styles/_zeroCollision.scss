@@ -1,0 +1,85 @@
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
+
+.zeroCollisionWrapper {
+  @include commonDisplayAttributes(flex, center, center);
+  min-height: 100vh;
+  background: #111;
+
+  .container {
+    @include commonDisplayAttributes(flex, center, center);
+    position: relative;
+    width: 100%;
+
+    .square {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+
+      span {
+        position: absolute;
+        inset: 10px;
+        overflow: hidden;
+        transform: rotate(calc(90deg * var(--i)));
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          background: #0f0;
+          transform: translateX(-100%);
+          animation: collision 4s linear infinite;
+          animation-delay: calc(1s * var(--i));
+        }
+      }
+
+      &:nth-child(2) {
+        transform: translate(-25%, -25%) rotateX(180deg);
+        filter: hue-rotate(60deg);
+      }
+      &:nth-child(3) {
+        transform: translate(25%, 25%) rotateX(180deg);
+        filter: hue-rotate(180deg);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #0f0;
+        box-shadow: 0 0 0 8px #0f03, 0 0 0 15px #0f01;
+        animation: squareAni 4s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes collision {
+  0% {
+    transform: translateX(-100%);
+  }
+  50%,
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes squareAni {
+  0% {
+    transform: translate(2px, 2px);
+  }
+  25% {
+    transform: translate(178px, 2px);
+  }
+  50% {
+    transform: translate(178px, 178px);
+  }
+  75% {
+    transform: translate(2px, 178px);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
+}

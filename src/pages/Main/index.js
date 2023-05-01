@@ -504,6 +504,13 @@ const index = () => {
             </Link>
             <p>23. 04. 30</p>
           </div>
+          <div className="item">
+            <p>Zero Collision</p>
+            <Link to="/zeroCollision">
+              <img src="https://user-images.githubusercontent.com/66737450/235467037-47f9faaf-1646-4572-9a78-4b9c5efd192c.png" alt="zeroCollision" />
+            </Link>
+            <p>23. 05. 01</p>
+          </div>
         </div>
       </div>
     </div>
