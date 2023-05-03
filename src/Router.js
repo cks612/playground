@@ -76,6 +76,7 @@ import ProductCard from "./components/ProductCard";
 import AnimatedGaming from "./components/AnimatedGaming";
 import BackgroundParticles from "./components/BackgroundParticles";
 import ZeroCollision from "./components/ZeroCollision";
+import FuturisticButton from "./components/FuturisticButton";
 
 const Loading = () => {
   return <div>Loading...</div>;
@@ -160,6 +161,7 @@ export default function Router() {
         <Route path="/animatedGaming" element={<AnimatedGaming />} />
         <Route path="/backgroundParticles" element={<BackgroundParticles />} />
         <Route path="/zeroCollision" element={<ZeroCollision />} />
+        <Route path="/futuristicButton" element={<FuturisticButton />} />
       </Routes>
     </Suspense>
   );
